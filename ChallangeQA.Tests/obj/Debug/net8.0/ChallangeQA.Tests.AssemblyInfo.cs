@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChallangeQA.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfd950765bb69d2467887036122caf983db6a91e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChallangeQA.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChallangeQA.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

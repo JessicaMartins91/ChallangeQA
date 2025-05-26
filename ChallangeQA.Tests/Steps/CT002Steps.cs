@@ -18,7 +18,7 @@ namespace MyNamespace
             driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
-
+        
         [Given(@"que o usuário clique para selecionar curso")]
         public void GivenQueOUsuarioCliqueParaSelecionarCurso()
         {
@@ -58,6 +58,7 @@ namespace MyNamespace
                 d.FindElement(By.CssSelector("[data-testid='graduation-combo']"))
             );
             campoSelecionado.Text.Should().Contain("Engenharia de Software");
+            
             var botaoAvancar = wait.Until(d =>
                d.FindElement(By.CssSelector("button.inline-flex.items-center.justify-center.bg-primary"))
     );

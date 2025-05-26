@@ -116,3 +116,4 @@ D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.pdb
 D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.genruntimeconfig.cache
 D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ref\ChallangeQA.Tests.dll
 D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\SeleniumExtras.WaitHelpers.dll
+D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.sourcelink.json
