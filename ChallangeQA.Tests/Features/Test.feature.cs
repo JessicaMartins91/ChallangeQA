@@ -343,15 +343,16 @@ testRunner.Then("ao avançar sem informar o campo celular um alerta deve ser exi
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="CT009: Avançar sem preencher apenas o campo cep")]
+        [Xunit.SkippableFactAttribute(DisplayName="CT009: Avançar sem preencher apenas o campo cep", Skip="Ignored")]
         [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
         [Xunit.TraitAttribute("Description", "CT009: Avançar sem preencher apenas o campo cep")]
         public void CT009AvancarSemPreencherApenasOCampoCep()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT009: Avançar sem preencher apenas o campo cep", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 51
+#line 52
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -361,15 +362,406 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 52
+#line 53
 testRunner.Given("que o usuário que os dados das etapas anteriores tenham sido informadas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 53
+#line 54
 testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto cep", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 54
+#line 55
 testRunner.Then("ao avançar sem informar o campo cep um alerta deve ser exibido campo é obrigatóri" +
                         "o.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="CT010: Avançar sem preencher apenas o campo endereço", Skip="Ignored")]
+        [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
+        [Xunit.TraitAttribute("Description", "CT010: Avançar sem preencher apenas o campo endereço")]
+        public void CT010AvancarSemPreencherApenasOCampoEndereco()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT010: Avançar sem preencher apenas o campo endereço", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 58
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 59
+testRunner.Given("que os dados das etapas anteriores tenham sido informados", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 60
+testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto endereço" +
+                        "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 61
+testRunner.Then("ao avançar sem informar o campo endereço um alerta deve ser exibido campo é obrig" +
+                        "atório.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="CT011: Avançar sem preencher apenas o campo bairro", Skip="Ignored")]
+        [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
+        [Xunit.TraitAttribute("Description", "CT011: Avançar sem preencher apenas o campo bairro")]
+        public void CT011AvancarSemPreencherApenasOCampoBairro()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT011: Avançar sem preencher apenas o campo bairro", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 64
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 65
+testRunner.Given("que os dados das etapas anteriores tenham sido preenchidos corretamente", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 66
+testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto bairro", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 67
+testRunner.Then("ao avançar sem informar o bairro um alerta deve ser exibido campo é obrigatório.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="CT012: Avançar sem preencher apenas o campo cidade", Skip="Ignored")]
+        [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
+        [Xunit.TraitAttribute("Description", "CT012: Avançar sem preencher apenas o campo cidade")]
+        public void CT012AvancarSemPreencherApenasOCampoCidade()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT012: Avançar sem preencher apenas o campo cidade", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 70
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 71
+testRunner.Given("que os dados das etapas anteriores tenham sido corretamente inseridas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 72
+testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto cidade", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 73
+testRunner.Then("ao avançar sem informar o cidade um alerta deve ser exibido campo é obrigatório.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="CT013: Avançar sem preencher apenas o campo estado", Skip="Ignored")]
+        [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
+        [Xunit.TraitAttribute("Description", "CT013: Avançar sem preencher apenas o campo estado")]
+        public void CT013AvancarSemPreencherApenasOCampoEstado()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT013: Avançar sem preencher apenas o campo estado", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 76
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 77
+testRunner.Given("que os usuario informou os dados necessários antes de preencher o formulário", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 78
+testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto estado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 79
+testRunner.Then("ao avançar sem informar o estado um alerta deve ser exibido campo é obrigatório.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="CT014: Avançar sem preencher apenas o campo pais", Skip="Ignored")]
+        [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
+        [Xunit.TraitAttribute("Description", "CT014: Avançar sem preencher apenas o campo pais")]
+        public void CT014AvancarSemPreencherApenasOCampoPais()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT014: Avançar sem preencher apenas o campo pais", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 82
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 83
+testRunner.Given("que os usuario informou todos os dados anteriores", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 84
+testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto pais", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 85
+testRunner.Then("ao avançar sem informar o pais um alerta deve ser exibido campo é obrigatório.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="CT015: Permitir avanço sem preenchimento do campo Complemento", Skip="Ignored")]
+        [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
+        [Xunit.TraitAttribute("Description", "CT015: Permitir avanço sem preenchimento do campo Complemento")]
+        public void CT015PermitirAvancoSemPreenchimentoDoCampoComplemento()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT015: Permitir avanço sem preenchimento do campo Complemento", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 88
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 89
+testRunner.Given("que o usuário tenha preenchido as informações anteriores ao formulário de inscriç" +
+                        "ão", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 90
+testRunner.When("clicar no botão \"Avançar\" sem preencher o campo Complemento", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 91
+testRunner.Then("o sistema deve permitir que o usuário avance para a tela de login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="CT016: Exibir alerta ao preencher o CPF com formato inválido", Skip="Ignored")]
+        [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
+        [Xunit.TraitAttribute("Description", "CT016: Exibir alerta ao preencher o CPF com formato inválido")]
+        public void CT016ExibirAlertaAoPreencherOCPFComFormatoInvalido()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT016: Exibir alerta ao preencher o CPF com formato inválido", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 94
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 95
+testRunner.Given("que o usuário esteja na página de formulário de inscrição", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 96
+testRunner.When("preencher o campo CPF com o valor invalido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 97
+testRunner.Then("ao clicar em avançar uma mensagem de alerta deve ser exibida informando que o CPF" +
+                        " é inválido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="CT017: Validar formato do email inválido", Skip="Ignored")]
+        [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
+        [Xunit.TraitAttribute("Description", "CT017: Validar formato do email inválido")]
+        public void CT017ValidarFormatoDoEmailInvalido()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT017: Validar formato do email inválido", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 100
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 101
+  testRunner.Given("que o usuário informe os dados cadastrais", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 102
+  testRunner.When("preencher o campo email com o valor invalido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 103
+  testRunner.Then("uma mensagem de alerta deve ser exibida informando Email inválido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="CT018: Preencher o campo Celular com menos caracteres", Skip="Ignored")]
+        [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
+        [Xunit.TraitAttribute("Description", "CT018: Preencher o campo Celular com menos caracteres")]
+        public void CT018PreencherOCampoCelularComMenosCaracteres()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT018: Preencher o campo Celular com menos caracteres", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 106
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 107
+  testRunner.Given("que o usuário foi direcionado a tela de cadastro", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 108
+  testRunner.When("o usuário preenche o campo Celular com menos de 10 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 109
+  testRunner.Then("uma mensagem de alerta deve ser exibida informando sobre a quantidade de caracter" +
+                        "es", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="CT019: Preencher o campo Celular com mais caracteres", Skip="Ignored")]
+        [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
+        [Xunit.TraitAttribute("Description", "CT019: Preencher o campo Celular com mais caracteres")]
+        public void CT019PreencherOCampoCelularComMaisCaracteres()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT019: Preencher o campo Celular com mais caracteres", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 111
+  this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 112
+  testRunner.Given("que o usuário foi direcionado a tela de cadastro e os dados foram informados", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 113
+  testRunner.When("o usuário preenche o campo Celular com mais de 15 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 114
+  testRunner.Then("uma mensagem de alerta deve ser exibida informando sobre a quantidade maxima perm" +
+                        "itida", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="CT020: Preencher o campo telefone com menos caracteres na tela de cadastro", Skip="Ignored")]
+        [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
+        [Xunit.TraitAttribute("Description", "CT020: Preencher o campo telefone com menos caracteres na tela de cadastro")]
+        public void CT020PreencherOCampoTelefoneComMenosCaracteresNaTelaDeCadastro()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT020: Preencher o campo telefone com menos caracteres na tela de cadastro", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 117
+  this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 118
+  testRunner.Given("que o usuário está na tela de cadastro informando os dados necessários", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 119
+  testRunner.When("o usuário preenche o campo Telefone com menos de 10 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 120
+  testRunner.Then("deve ser exibida a mensagem no campo telefone Devem ser informados no mínimo 10 c" +
+                        "aracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="CT021: Preencher o campo telefone com mais caracteres na tela de cadastro")]
+        [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
+        [Xunit.TraitAttribute("Description", "CT021: Preencher o campo telefone com mais caracteres na tela de cadastro")]
+        public void CT021PreencherOCampoTelefoneComMaisCaracteresNaTelaDeCadastro()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT021: Preencher o campo telefone com mais caracteres na tela de cadastro", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 122
+  this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 123
+  testRunner.Given("que o usuário está na tela de cadastro preenchendo as informações pessoais", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 124
+  testRunner.When("o usuário preenche o campo Telefone com mais de 15 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 125
+  testRunner.Then("deve ser exibida a mensagem no campo telefone Devem ser informados no máximo 15 c" +
+                        "aracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
