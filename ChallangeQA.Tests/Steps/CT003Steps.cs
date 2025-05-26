@@ -103,12 +103,20 @@ namespace ChallangeQA.Steps
             paisInput.SendKeys("Brasil");
         }
 
-    [Then(@"ao clicar em 'Avançar' deve ser direcionado para a tela que informa seu usuário e senha\.")]
+    [Then(@"ao clicar em 'Avançar' deve ser direcionado para a tela que informa seu usuário e senha.")]
     public void ThenAoClicarEmAvancarDeveSerDirecionadoParaATelaQueInformaSeuUsuarioESenha()
         {
             var botaoAvancar = driver.FindElement(By.CssSelector("[data-testid='next-button']"));
             botaoAvancar.Click();
         }
+
+        [AfterScenario]
+        public void TearDown()
+        {
+            driver.Quit();
+            driver.Dispose();
+        }
+        
         }
     }
 

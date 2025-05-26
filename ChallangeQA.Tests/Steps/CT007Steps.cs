@@ -8,19 +8,19 @@ using FluentAssertions;
 namespace ChallangeQA.Steps
 {
     [Binding]
-    public class CT005Steps
+    public class CT007Steps
     {
         private readonly IWebDriver driver;
         private readonly WebDriverWait wait;
 
-        public CT005Steps()
+        public CT007Steps()
         {
             driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
 
-        [Given(@"que o usuário tenha avançado as duas etapas iniciais")]
-        public void GivenQueOUsuárioTenhaAvancadoAsDuasEtapasIniciais()
+        [Given(@"que o usuário tenha informado os dados das etapas anteriores")]
+        public void GivenQueOUsuarioTenhaInformadoOsDadosDasEtapasAnteriores()
         {
             driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription/");
 
@@ -52,8 +52,8 @@ namespace ChallangeQA.Steps
             botaoAvancar.Click();
         }
 
-        [When(@"tenha preenchido os campos obrigatórios do formulário de cadastro exceto Nome")]
-        public void WhenTenhaPreenchidoOsCamposObrigatoriosDoFormularioDeCadastroExcetoNome()
+        [When(@"tenha preenchido os campos obrigatórios do formulário de cadastro exceto email")]
+        public void WhenTenhaPreenchidoOsCamposObrigatoriosExcetoEmail()
         {
             var cpfInput = wait.Until(d => 
             d.FindElement(By.CssSelector("[data-testid='cpf-input']")));
@@ -61,7 +61,7 @@ namespace ChallangeQA.Steps
 
             var nomeInput = wait.Until(d => 
             d.FindElement(By.CssSelector("[data-testid='name-input']")));
-            nomeInput.SendKeys("");
+            nomeInput.SendKeys("Jéssica");
 
             var sobrenomeInput = wait.Until(d => 
             d.FindElement(By.CssSelector("[data-testid='surname-input']")));
@@ -69,7 +69,7 @@ namespace ChallangeQA.Steps
 
             var emailInput = wait.Until(d => 
             d.FindElement(By.CssSelector("[data-testid='email-input']")));
-            emailInput.SendKeys("jessicamartins@teste.com.br");
+            emailInput.SendKeys("");
 
             var celularInput = wait.Until(d => 
             d.FindElement(By.CssSelector("[data-testid='cellphone-input']")));
@@ -104,8 +104,8 @@ namespace ChallangeQA.Steps
             paisInput.SendKeys("Brasil");
         }
 
-        [Then(@"ao clicar em avançar um alerta deve ser exibida informando que o campo é obrigatório\.")]
-        public void ThenAoClicarEmAvancarUmAlertaDeveSerExibidaInformandoQueOCampoEObrigatorio()
+        [Then(@"ao avançar sem informar o campo email um alerta deve ser exibido campo é obrigatório.")]
+        public void ThenAoAvancarSemInformarOCampoEmailUmAlertaDeveSerExibidoCampoObrigatorio()
         {
             var botaoAvancar = wait.Until(d => d.FindElement(By.CssSelector("[data-testid='next-button']")));
             botaoAvancar.Click();

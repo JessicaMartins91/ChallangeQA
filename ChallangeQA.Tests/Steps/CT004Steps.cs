@@ -103,7 +103,7 @@ namespace ChallangeQA.Steps
             paisInput.SendKeys("Brasil");
         }
 
-    [Then(@"ao clicar em avançar uma mensagem de alerta deve ser exibida informando que o campo é obrigatório\.")]
+    [Then(@"ao clicar em avançar uma mensagem de alerta deve ser exibida informando que o campo é obrigatório.")]
     public void ThenAoClicarEmAvancarUmaMensagemDeAlertaDeveSerExibidaInformandoQueOCampoEObrigatorio_()
          {
         var botaoAvancar = driver.FindElement(By.CssSelector("[data-testid='next-button']"));

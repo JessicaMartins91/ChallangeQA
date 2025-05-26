@@ -38,7 +38,7 @@ namespace ChallangeQA.Steps
             );
                 opcaoGraduacao.Click();
         }
-
+            // Modal selecione se curso deve ser exibida
         [Then(@"deve ser exibida a modal Selecione seu curso de graduação")]
         public void EntaoDeveSerExibidaAModalSelecioneSeuCursoDeGraduacao()
         {
@@ -47,4 +47,10 @@ namespace ChallangeQA.Steps
     );
                 modalTitulo.Displayed.Should().BeTrue();
 }
+        [AfterScenario]
+        public void TearDown()
+        {
+            driver.Quit();
+            driver.Dispose();
+        }
 }}

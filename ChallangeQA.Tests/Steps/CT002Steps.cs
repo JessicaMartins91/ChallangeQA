@@ -65,5 +65,12 @@ namespace MyNamespace
     botaoAvancar.Click();
 
         }
+
+        [AfterScenario]
+        public void TearDown()
+        {
+            driver.Quit();
+            driver.Dispose();
+        }
     }
 }
