@@ -624,13 +624,13 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 101
-  testRunner.Given("que o usuário informe os dados cadastrais", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("que o usuário informe os dados cadastrais", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 102
-  testRunner.When("preencher o campo email com o valor invalido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.When("preencher o campo email com o valor invalido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 103
-  testRunner.Then("uma mensagem de alerta deve ser exibida informando Email inválido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Then("uma mensagem de alerta deve ser exibida informando Email inválido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -656,13 +656,13 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 107
-  testRunner.Given("que o usuário foi direcionado a tela de cadastro", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("que o usuário foi direcionado a tela de cadastro", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 108
-  testRunner.When("o usuário preenche o campo Celular com menos de 10 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.When("o usuário preenche o campo Celular com menos de 10 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 109
-  testRunner.Then("uma mensagem de alerta deve ser exibida informando sobre a quantidade de caracter" +
+testRunner.Then("uma mensagem de alerta deve ser exibida informando sobre a quantidade de caracter" +
                         "es", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -678,8 +678,8 @@ this.ScenarioInitialize(scenarioInfo);
                     "ignore"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT019: Preencher o campo Celular com mais caracteres", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 111
-  this.ScenarioInitialize(scenarioInfo);
+#line 112
+this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
             {
@@ -688,14 +688,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 112
-  testRunner.Given("que o usuário foi direcionado a tela de cadastro e os dados foram informados", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
 #line 113
-  testRunner.When("o usuário preenche o campo Celular com mais de 15 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("que o usuário foi direcionado a tela de cadastro e os dados foram informados", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 114
-  testRunner.Then("uma mensagem de alerta deve ser exibida informando sobre a quantidade maxima perm" +
+ testRunner.When("o usuário preenche o campo Celular com mais de 15 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 115
+ testRunner.Then("uma mensagem de alerta deve ser exibida informando sobre a quantidade maxima perm" +
                         "itida", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -711,8 +711,8 @@ this.ScenarioInitialize(scenarioInfo);
                     "ignore"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT020: Preencher o campo telefone com menos caracteres na tela de cadastro", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 117
-  this.ScenarioInitialize(scenarioInfo);
+#line 118
+ this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
             {
@@ -721,30 +721,31 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 118
-  testRunner.Given("que o usuário está na tela de cadastro informando os dados necessários", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
 #line 119
-  testRunner.When("o usuário preenche o campo Telefone com menos de 10 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("que o usuário está na tela de cadastro informando os dados necessários", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 120
-  testRunner.Then("deve ser exibida a mensagem no campo telefone Devem ser informados no mínimo 10 c" +
+ testRunner.When("o usuário preenche o campo Telefone com menos de 10 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 121
+ testRunner.Then("deve ser exibida a mensagem no campo telefone Devem ser informados no mínimo 10 c" +
                         "aracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="CT021: Preencher o campo telefone com mais caracteres na tela de cadastro")]
+        [Xunit.SkippableFactAttribute(DisplayName="CT021: Preencher o campo telefone com mais caracteres na tela de cadastro", Skip="Ignored")]
         [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
         [Xunit.TraitAttribute("Description", "CT021: Preencher o campo telefone com mais caracteres na tela de cadastro")]
         public void CT021PreencherOCampoTelefoneComMaisCaracteresNaTelaDeCadastro()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT021: Preencher o campo telefone com mais caracteres na tela de cadastro", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 122
-  this.ScenarioInitialize(scenarioInfo);
+#line 124
+ this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
             {
@@ -753,15 +754,110 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 123
-  testRunner.Given("que o usuário está na tela de cadastro preenchendo as informações pessoais", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 124
-  testRunner.When("o usuário preenche o campo Telefone com mais de 15 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
 #line 125
-  testRunner.Then("deve ser exibida a mensagem no campo telefone Devem ser informados no máximo 15 c" +
+ testRunner.Given("que o usuário está na tela de cadastro preenchendo as informações pessoais", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 126
+ testRunner.When("o usuário preenche o campo Telefone com mais de 15 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 127
+ testRunner.Then("deve ser exibida a mensagem no campo telefone Devem ser informados no máximo 15 c" +
                         "aracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="CT022: Validar a exibição da flag Possui deficiência", Skip="Ignored")]
+        [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
+        [Xunit.TraitAttribute("Description", "CT022: Validar a exibição da flag Possui deficiência")]
+        public void CT022ValidarAExibicaoDaFlagPossuiDeficiencia()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT022: Validar a exibição da flag Possui deficiência", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 130
+ this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 131
+ testRunner.Given("que tenha preenchido as informações do formulario corretamente", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 132
+ testRunner.When("o usuário marcar a opção Possui alguma deficiência?", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 133
+ testRunner.Then("um campo para preenchimento relacionado à deficiência deve ser exibido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="CT023: Validar preenchimento do nome social opcional", Skip="Ignored")]
+        [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
+        [Xunit.TraitAttribute("Description", "CT023: Validar preenchimento do nome social opcional")]
+        public void CT023ValidarPreenchimentoDoNomeSocialOpcional()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT023: Validar preenchimento do nome social opcional", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 136
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 137
+testRunner.Given("que o usuário informe os dados necessários antes de preencher o formulario", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 138
+testRunner.When("preencher o campo Nome social com Mariana", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 139
+testRunner.Then("o valor Mariana deve ser mantido e aceito como nome social", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="CT024: Retornar para tela selecione seu nível de ensino")]
+        [Xunit.TraitAttribute("FeatureTitle", "Validação da aplicação MaisA")]
+        [Xunit.TraitAttribute("Description", "CT024: Retornar para tela selecione seu nível de ensino")]
+        public void CT024RetornarParaTelaSelecioneSeuNivelDeEnsino()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT024: Retornar para tela selecione seu nível de ensino", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 142
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 143
+testRunner.Given("que o usuário esteja na tela selecione seu curso de Graduação", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 144
+testRunner.When("clicar no botão voltar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 145
+testRunner.Then("o sistema deve retornar para a tela de Selecione seu nível de ensino", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

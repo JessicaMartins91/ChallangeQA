@@ -1,8 +1,3 @@
-D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.csproj.AssemblyReference.cache
-D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.GeneratedMSBuildEditorConfig.editorconfig
-D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.AssemblyInfoInputs.cache
-D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.AssemblyInfo.cs
-D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.csproj.CoreCompileInputs.cache
 D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\testhost.dll
 D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\TechTalk.SpecFlow.xUnit.SpecFlowPlugin.dll
 D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\testhost.exe
@@ -17,6 +12,7 @@ D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\ChallangeQA.Tests.runtimeconfi
 D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\ChallangeQA.Tests.dll
 D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\ChallangeQA.Tests.pdb
 D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\BoDi.dll
+D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\SeleniumExtras.WaitHelpers.dll
 D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\FluentAssertions.dll
 D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\Gherkin.dll
 D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
@@ -109,11 +105,15 @@ D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform
 D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.csproj.AssemblyReference.cache
+D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.AssemblyInfoInputs.cache
+D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.AssemblyInfo.cs
+D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.csproj.CoreCompileInputs.cache
+D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.sourcelink.json
 D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\Challang.E067FE6A.Up2Date
 D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.dll
 D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\refint\ChallangeQA.Tests.dll
 D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.pdb
 D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.genruntimeconfig.cache
 D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ref\ChallangeQA.Tests.dll
-D:\ChallangeQA\ChallangeQA.Tests\bin\Debug\net8.0\SeleniumExtras.WaitHelpers.dll
-D:\ChallangeQA\ChallangeQA.Tests\obj\Debug\net8.0\ChallangeQA.Tests.sourcelink.json

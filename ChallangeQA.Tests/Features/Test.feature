@@ -98,34 +98,58 @@ Then ao clicar em avançar uma mensagem de alerta deve ser exibida informando qu
 
 @ignore
 Scenario: CT017: Validar formato do email inválido
-  Given que o usuário informe os dados cadastrais
-  When preencher o campo email com o valor invalido
-  Then uma mensagem de alerta deve ser exibida informando Email inválido
+Given que o usuário informe os dados cadastrais
+When preencher o campo email com o valor invalido
+Then uma mensagem de alerta deve ser exibida informando Email inválido
 
 @ignore
 Scenario: CT018: Preencher o campo Celular com menos caracteres
-  Given que o usuário foi direcionado a tela de cadastro
-  When o usuário preenche o campo Celular com menos de 10 caracteres
-  Then uma mensagem de alerta deve ser exibida informando sobre a quantidade de caracteres
-@ignore
-  Scenario: CT019: Preencher o campo Celular com mais caracteres
-  Given que o usuário foi direcionado a tela de cadastro e os dados foram informados
-  When o usuário preenche o campo Celular com mais de 15 caracteres
-  Then uma mensagem de alerta deve ser exibida informando sobre a quantidade maxima permitida
+Given que o usuário foi direcionado a tela de cadastro
+When o usuário preenche o campo Celular com menos de 10 caracteres
+Then uma mensagem de alerta deve ser exibida informando sobre a quantidade de caracteres
 
 @ignore
-  Scenario: CT020: Preencher o campo telefone com menos caracteres na tela de cadastro
-  Given que o usuário está na tela de cadastro informando os dados necessários
-  When o usuário preenche o campo Telefone com menos de 10 caracteres
-  Then deve ser exibida a mensagem no campo telefone Devem ser informados no mínimo 10 caracteres
+Scenario: CT019: Preencher o campo Celular com mais caracteres
+ Given que o usuário foi direcionado a tela de cadastro e os dados foram informados
+ When o usuário preenche o campo Celular com mais de 15 caracteres
+ Then uma mensagem de alerta deve ser exibida informando sobre a quantidade maxima permitida
 
 @ignore
-  Scenario: CT021: Preencher o campo telefone com mais caracteres na tela de cadastro
-  Given que o usuário está na tela de cadastro preenchendo as informações pessoais
-  When o usuário preenche o campo Telefone com mais de 15 caracteres
-  Then deve ser exibida a mensagem no campo telefone Devem ser informados no máximo 15 caracteres
+ Scenario: CT020: Preencher o campo telefone com menos caracteres na tela de cadastro
+ Given que o usuário está na tela de cadastro informando os dados necessários
+ When o usuário preenche o campo Telefone com menos de 10 caracteres
+ Then deve ser exibida a mensagem no campo telefone Devem ser informados no mínimo 10 caracteres
 
-  
+@ignore
+ Scenario: CT021: Preencher o campo telefone com mais caracteres na tela de cadastro
+ Given que o usuário está na tela de cadastro preenchendo as informações pessoais
+ When o usuário preenche o campo Telefone com mais de 15 caracteres
+ Then deve ser exibida a mensagem no campo telefone Devem ser informados no máximo 15 caracteres
+
+@ignore
+ Scenario: CT022: Validar a exibição da flag Possui deficiência
+ Given que tenha preenchido as informações do formulario corretamente
+ When o usuário marcar a opção Possui alguma deficiência?
+ Then um campo para preenchimento relacionado à deficiência deve ser exibido
+
+@ignore
+Scenario: CT023: Validar preenchimento do nome social opcional
+Given que o usuário informe os dados necessários antes de preencher o formulario
+When preencher o campo Nome social com Mariana
+Then o valor Mariana deve ser mantido e aceito como nome social
+
+
+Scenario: CT024: Retornar para tela selecione seu nível de ensino
+Given que o usuário esteja na tela selecione seu curso de Graduação
+When clicar no botão voltar
+Then o sistema deve retornar para a tela de Selecione seu nível de ensino
+
+
+
+
+
+
+
 
 
 
