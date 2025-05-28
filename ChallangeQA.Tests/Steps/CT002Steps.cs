@@ -19,6 +19,7 @@ namespace MyNamespace
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
         
+      
         [Given(@"que o usuário clique para selecionar curso")]
         public void GivenQueOUsuarioCliqueParaSelecionarCurso()
         {

@@ -4,23 +4,25 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 using FluentAssertions;
+using Xunit;
+
+
 
 namespace ChallangeQA.Steps
 {
     [Binding]
-    public class CT023Steps
+    public class CT033Steps
     {
         private readonly IWebDriver driver;
         private readonly WebDriverWait wait;
 
-        public CT023Steps()
+        public CT033Steps()
         {
             driver = new ChromeDriver();
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
         }
-
-    [Given(@"que o usuário informe os dados necessários antes de preencher o formulario")]
-    public void GivenQueOUsuarioInformeOsDadosNecessariosAntesDePreencherOFormulario()
+    [Given(@"que após informar os dados pessoais o usuário esteja na tela de login e senha")]
+    public void GivenQueAposInformarOsDadosPessoaisOUsuarioEstejanaTelaDeLoginESenha()
         {
             driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription/");
 
@@ -45,83 +47,90 @@ namespace ChallangeQA.Steps
                 cursoInput.Click();
                 cursoInput.SendKeys("Engenharia de Software");
                 cursoInput.SendKeys(Keys.Enter);
-
-            var botaoAvancar = wait.Until(d =>
-                d.FindElement(By.CssSelector("button.inline-flex.items-center.justify-center.bg-primary"))
-            );
-                botaoAvancar.Click();
-        }
-
-    [When(@"preencher o campo Nome social com Mariana")]
-    public void WhenPreencherOCampoNomeSocialComMariana()
-        {
-            var cpfInput = wait.Until(d =>
-                d.FindElement(By.CssSelector("[data-testid='cpf-input']")));
-                cpfInput.SendKeys("11495607623");
-
-            var nomeInput = wait.Until(d =>
-                d.FindElement(By.CssSelector("[data-testid='name-input']")));
-                nomeInput.SendKeys("Jéssica");
-
-            var sobrenomeInput = wait.Until(d =>
-                d.FindElement(By.CssSelector("[data-testid='surname-input']")));
-                sobrenomeInput.SendKeys("Martins");
-
-            var nomeSocialInput = wait.Until(d =>
-                d.FindElement(By.CssSelector("[data-testid='social-name-input']")));
-                nomeSocialInput.SendKeys("Mariana");
-
-            var emailInput = wait.Until(d =>
-                d.FindElement(By.CssSelector("[data-testid='email-input']")));
-                emailInput.SendKeys("jessica@teste.com.br");
-
-            var celularInput = wait.Until(d =>
-                d.FindElement(By.CssSelector("[data-testid='cellphone-input']")));
-                celularInput.SendKeys("31975000000"); 
-
-            var telefoneInput = wait.Until(d =>
-                d.FindElement(By.CssSelector("[data-testid='phone-input']")));
-                 telefoneInput.SendKeys("3132320032");
-
-            var cepInput = wait.Until(d =>
-                d.FindElement(By.CssSelector("[data-testid='cep-input']")));
-                cepInput.SendKeys("30330000");
-
-            var enderecoInput = wait.Until(d =>
-                d.FindElement(By.CssSelector("[data-testid='address-input']")));
-                enderecoInput.SendKeys("Rua A");
-
-            var bairroInput = wait.Until(d =>
-                d.FindElement(By.CssSelector("[data-testid='neighborhood-input']")));
-                bairroInput.SendKeys("São Pedro");
-
-            var cidadeInput = wait.Until(d =>
-                d.FindElement(By.CssSelector("[data-testid='city-input']")));
-                cidadeInput.SendKeys("Belo Horizonte");
-
-            var estadoInput = wait.Until(d =>
-                d.FindElement(By.CssSelector("[data-testid='state-input']")));
-                 estadoInput.SendKeys("Minas Gerais");
-
-            var paisInput = wait.Until(d =>
-                d.FindElement(By.CssSelector("[data-testid='country-input']")));
-                 paisInput.SendKeys("Brasil");
-        }
-
-    [Then(@"o valor Mariana deve ser mantido e aceito como nome social")]
-    public void ThenOValorMarianaDeveSerMantidoEAceitoComoNomeSocial()
-        {   
-
-             var nomeSocialInput = wait.Until(d =>
-                 d.FindElement(By.CssSelector("[data-testid='social-name-input']")));
-    
-            var valorDigitado = nomeSocialInput.GetAttribute("value");
-                valorDigitado.Should().Be("Mariana");
-          
+            
             var botaoAvancar = wait.Until(d =>
                 d.FindElement(By.CssSelector("[data-testid='next-button']")));
             botaoAvancar.Click();
 
+            var cpfInput = wait.Until(d =>
+                d.FindElement(By.CssSelector("[data-testid='cpf-input']")));
+            cpfInput.SendKeys("11495607623");
+
+            var nomeInput = wait.Until(d =>
+                d.FindElement(By.CssSelector("[data-testid='name-input']")));
+            nomeInput.SendKeys("Jéssica");
+
+            var sobrenomeInput = wait.Until(d =>
+                d.FindElement(By.CssSelector("[data-testid='surname-input']")));
+            sobrenomeInput.SendKeys("Martins");
+
+            var emailInput = wait.Until(d =>
+                d.FindElement(By.CssSelector("[data-testid='email-input']")));
+            emailInput.SendKeys("jessica@teste.com.br");
+
+            var celularInput = wait.Until(d =>
+                d.FindElement(By.CssSelector("[data-testid='cellphone-input']")));
+            celularInput.SendKeys("31975030000"); 
+
+            var telefoneInput = wait.Until(d =>
+                d.FindElement(By.CssSelector("[data-testid='phone-input']")));
+            telefoneInput.SendKeys("3132320032");
+
+            var cepInput = wait.Until(d =>
+                d.FindElement(By.CssSelector("[data-testid='cep-input']")));
+            cepInput.SendKeys("30330000");
+
+            var enderecoInput = wait.Until(d =>
+                d.FindElement(By.CssSelector("[data-testid='address-input']")));
+            enderecoInput.SendKeys("Rua A");
+
+            var bairroInput = wait.Until(d =>
+                d.FindElement(By.CssSelector("[data-testid='neighborhood-input']")));
+            bairroInput.SendKeys("São Pedro");
+
+            var cidadeInput = wait.Until(d =>
+                d.FindElement(By.CssSelector("[data-testid='city-input']")));
+            cidadeInput.SendKeys("Belo Horizonte");
+
+            var estadoInput = wait.Until(d =>
+                d.FindElement(By.CssSelector("[data-testid='state-input']")));
+            estadoInput.SendKeys("Minas Gerais");
+
+            var paisInput = wait.Until(d =>
+                d.FindElement(By.CssSelector("[data-testid='country-input']")));
+            paisInput.SendKeys("Brasil");
+
+            var botaoAvancarParaLogin = wait.Until(d =>
+                d.FindElement(By.CssSelector("[data-testid='next-button']")));
+            botaoAvancarParaLogin.Click();
+
+            var acessarAreaCandidato = wait.Until(d => 
+                d.FindElement(By.CssSelector("[data-testid='next-button']")));
+                acessarAreaCandidato.Click();
         }
+
+    [When(@"clicar no link de recuperar senha")]
+    public void WhenClicarNoLinkRecuperarSenha()
+        {
+            var recuperarUsuarioLink = wait.Until(d =>
+                d.FindElement(By.XPath("//a[contains(text(), 'Redefinir senha')]"))
+            );
+                recuperarUsuarioLink.Click();
+        }
+
+    [Then(@"ao clicar em voltar para home sera direcionado para tela de login")]
+    public void ThenAoClicarEmVoltarParaHomeSeraDirecionadoParaTelaDeLogin()
+        {
+            var voltarHome = wait.Until(d => 
+                d.FindElement(By.CssSelector("[data-testid='back-button']")));
+                voltarHome.Click();
+            
+            var mensagemLogin = wait.Until(d =>
+                d.FindElement(By.CssSelector(".text-sm.text-muted-foreground"))
+            );
+            mensagemLogin.Text.Should().Contain("Faça login para acessar a área do candidato");
+        }
+
     }
 }
+

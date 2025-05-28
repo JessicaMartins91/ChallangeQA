@@ -20,7 +20,7 @@ namespace ChallangeQA.Steps
         }
 
         [Given(@"que o usuário tenha avançado as duas etapas iniciais")]
-        public void GivenQueOUsuárioTenhaAvancadoAsDuasEtapasIniciais()
+        public void GivenQueOUsuarioTenhaAvancadoAsDuasEtapasIniciais()
         {
             driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription/");
 
@@ -104,7 +104,7 @@ namespace ChallangeQA.Steps
             paisInput.SendKeys("Brasil");
         }
 
-        [Then(@"ao clicar em avançar um alerta deve ser exibida informando que o campo é obrigatório\.")]
+        [Then(@"ao clicar em avançar um alerta deve ser exibida informando que o campo é obrigatório.")]
         public void ThenAoClicarEmAvancarUmAlertaDeveSerExibidaInformandoQueOCampoEObrigatorio()
         {
             var botaoAvancar = wait.Until(d => d.FindElement(By.CssSelector("[data-testid='next-button']")));
