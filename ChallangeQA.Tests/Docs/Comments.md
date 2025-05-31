@@ -21,6 +21,3 @@ Estruturação e organização do código: Investiria em uma arquitetura de test
 
 Estabilidade e confiabilidade dos testes: Buscaria reduzir a instabilidade dos testes melhorando a sincronização, usando esperas explícitas em vez de esperas fixas, e implementando tratamento de exceções para cenários dinâmicos.
 
-
-Quais requisitos obrigatórios que não foram entregues:
-Ainda estou fazendo o restante

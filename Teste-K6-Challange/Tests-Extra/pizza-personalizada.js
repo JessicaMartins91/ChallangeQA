@@ -22,7 +22,7 @@ const payload = JSON.stringify({
 const params = {
   headers: {
     'Content-Type': 'application/json',
-    'Authorization': 'Token jtyNidKMzxFGb0Mi',  // seu token de autenticação
+    'Authorization': 'Token jtyNidKMzxFGb0Mi',  // token de autenticação
   },
 };
 

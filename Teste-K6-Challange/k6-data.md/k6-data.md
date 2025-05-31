@@ -17,7 +17,7 @@ Neste cenário, os testes foram realizados simulando múltiplos acessos simultâ
 
 **Estratégia usada:** *Usuário fixo pré-configurado.*
 
-Foi utilizado um único usuário com credenciais fixas para simular 100 acessos simultâneos. Essa abordagem simplificou o cenário ao evitar a necessidade de múltiplos logins distintos.
+Foi utilizado um único usuário com credenciais fixas para simular 100 acessos simultâneos. 
 
 **Limitação identificada:**  
 Houve tentativa de criar múltiplos usuários dinamicamente por meio de uma API de cadastro, mas a mesma estava indisponível, retornando erro `404`. Por esse motivo, não foi possível validar as credenciais nem garantir uma massa de dados variada para esse teste.
@@ -36,7 +36,7 @@ Foi utilizado um único login para simular 50 usuários personalizando pizzas em
 
 **Estratégia usada:** *Usuário único reutilizado em VUs paralelas.*
 
-De forma semelhante ao cenário anterior, foi utilizado um usuário fixo para enviar requisições simultâneas ao endpoint `"Pizza, por favor"`. Esse teste avaliou a capacidade da API de suportar múltiplos acessos concorrentes, mesmo com limitação na massa de dados.
+De forma semelhante ao cenário anterior, foi utilizado um usuário fixo para enviar requisições simultâneas ao endpoint `"Pizza, por favor"`. 
 
 ---
 

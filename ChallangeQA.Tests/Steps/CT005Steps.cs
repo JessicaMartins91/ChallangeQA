@@ -56,61 +56,63 @@ namespace ChallangeQA.Steps
         public void WhenTenhaPreenchidoOsCamposObrigatoriosDoFormularioDeCadastroExcetoNome()
         {
             var cpfInput = wait.Until(d => 
-            d.FindElement(By.CssSelector("[data-testid='cpf-input']")));
+                d.FindElement(By.CssSelector("[data-testid='cpf-input']")));
             cpfInput.SendKeys("11495607623");
 
             var nomeInput = wait.Until(d => 
-            d.FindElement(By.CssSelector("[data-testid='name-input']")));
-            nomeInput.SendKeys("");
+                d.FindElement(By.CssSelector("[data-testid='name-input']")));
+            nomeInput.SendKeys(""); // campo nome vazio
 
             var sobrenomeInput = wait.Until(d => 
-            d.FindElement(By.CssSelector("[data-testid='surname-input']")));
+                d.FindElement(By.CssSelector("[data-testid='surname-input']")));
             sobrenomeInput.SendKeys("Martins");
 
             var emailInput = wait.Until(d => 
-            d.FindElement(By.CssSelector("[data-testid='email-input']")));
+                d.FindElement(By.CssSelector("[data-testid='email-input']")));
             emailInput.SendKeys("jessicamartins@teste.com.br");
 
             var celularInput = wait.Until(d => 
-            d.FindElement(By.CssSelector("[data-testid='cellphone-input']")));
+                d.FindElement(By.CssSelector("[data-testid='cellphone-input']")));
             celularInput.SendKeys("31975000000");
 
             var telefoneInput = wait.Until(d => 
-            d.FindElement(By.CssSelector("[data-testid='phone-input']")));
+                d.FindElement(By.CssSelector("[data-testid='phone-input']")));
             telefoneInput.SendKeys("3132320032");
 
             var cepInput = wait.Until(d => 
-            d.FindElement(By.CssSelector("[data-testid='cep-input']")));
+                d.FindElement(By.CssSelector("[data-testid='cep-input']")));
             cepInput.SendKeys("30330000");
 
             var enderecoInput = wait.Until(d => 
-            d.FindElement(By.CssSelector("[data-testid='address-input']")));
+                d.FindElement(By.CssSelector("[data-testid='address-input']")));
             enderecoInput.SendKeys("Rua A");
 
             var bairroInput = wait.Until(d => 
-            d.FindElement(By.CssSelector("[data-testid='neighborhood-input']")));
+                d.FindElement(By.CssSelector("[data-testid='neighborhood-input']")));
             bairroInput.SendKeys("São Pedro");
 
             var cidadeInput = wait.Until(d => 
-            d.FindElement(By.CssSelector("[data-testid='city-input']")));
+                d.FindElement(By.CssSelector("[data-testid='city-input']")));
             cidadeInput.SendKeys("Belo Horizonte");
 
             var estadoInput = wait.Until(d => 
-            d.FindElement(By.CssSelector("[data-testid='state-input']")));
+                d.FindElement(By.CssSelector("[data-testid='state-input']")));
             estadoInput.SendKeys("Belo Horizonte");
 
             var paisInput = wait.Until(d => 
-            d.FindElement(By.CssSelector("[data-testid='country-input']")));
+                d.FindElement(By.CssSelector("[data-testid='country-input']")));
             paisInput.SendKeys("Brasil");
         }
 
-        [Then(@"ao clicar em avançar um alerta deve ser exibida informando que o campo é obrigatório.")]
-        public void ThenAoClicarEmAvancarUmAlertaDeveSerExibidaInformandoQueOCampoEObrigatorio()
+        [Then(@"ao clicar em avançar um alerta deve ser exibido informando que o campo é obrigatório.")]
+        public void ThenAoClicarEmAvancarUmAlertaDeveSerExibidoInformandoQueOCampoEObrigatorio()
         {
-            var botaoAvancar = wait.Until(d => d.FindElement(By.CssSelector("[data-testid='next-button']")));
+            var botaoAvancar = wait.Until(d => 
+                d.FindElement(By.CssSelector("[data-testid='next-button']")));
             botaoAvancar.Click();
 
-            var alerta = wait.Until(d => d.FindElement(By.XPath("//*[contains(text(),'Campo obrigatório')]")));
+            var alerta = wait.Until(d => 
+                d.FindElement(By.XPath("//*[contains(text(),'Campo obrigatório')]")));
             alerta.Text.Should().Contain("Campo obrigatório");
         }
 

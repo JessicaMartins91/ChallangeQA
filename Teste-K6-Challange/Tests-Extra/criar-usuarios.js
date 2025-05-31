@@ -9,9 +9,9 @@ export let options = {
 export default function () {
   const url = 'http://quickpizza.grafana.com/api/users';
 
-  // Gerar nome simples sem caractere especial
-  const username = `usuario${__ITER + 1}`; // __ITER é a iteração atual (0 a 9)
-  const password = 'senha1234'; // senha sem caractere especial
+  // Gerar nome simples 
+  const username = `usuario${__ITER + 1}`;
+  const password = 'senha1234';
 
   const payload = JSON.stringify({
     username,

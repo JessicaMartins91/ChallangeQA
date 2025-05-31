@@ -21,7 +21,7 @@ export default function () {
     'status 200 em /my_messages.php': (r) => r.status === 200,
   });
 
-  sleep(1); // simula comportamento real do usuário
+  sleep(1); 
 }
 
 // ✅ Geração de relatório JSON + HTML básico ao final do teste
