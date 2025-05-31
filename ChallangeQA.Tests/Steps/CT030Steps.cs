@@ -7,7 +7,7 @@ using FluentAssertions;
 using Xunit;
 
 
-
+//Redirecionamento para recuperação de usuário
 namespace ChallangeQA.Steps
 {
     [Binding]

@@ -5,6 +5,7 @@ using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 using FluentAssertions;
 
+// Validar formato do email inválido
 namespace ChallangeQA.Steps
 {
     [Binding]

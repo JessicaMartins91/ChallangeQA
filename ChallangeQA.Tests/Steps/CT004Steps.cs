@@ -5,6 +5,7 @@ using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 using FluentAssertions;
 
+//Avançar sem preencher o campo de CPF
 namespace ChallangeQA.Steps
 {
     [Binding]
@@ -50,7 +51,8 @@ namespace ChallangeQA.Steps
              );
                  botaoAvancar.Click();
         }
-                //Validar mensagem de alerta ao não informar o campo CPF
+        
+        //Validar mensagem de alerta ao não informar o campo CPF
         [When(@"tenha preenchido os campos obrigatórios do formulário de cadastro exceto CPF")]
         public void WhenTenhaPreenchidoOsCamposObrigatoriosDoFormularioDeCadastroExcetoCPF()
         {

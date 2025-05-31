@@ -5,6 +5,7 @@ using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 using FluentAssertions;
 
+// Avançar sem preencher apenas o campo email
 namespace ChallangeQA.Steps
 {
     [Binding]

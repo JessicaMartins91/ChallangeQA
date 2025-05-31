@@ -18,7 +18,8 @@ namespace ChallangeQA.Steps
             driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
-
+    
+    //Preenche todos os dados do formulário de cadastro
     [Given(@"que o usuário preencha o nível e o curso de graduação")]
     public void GivenQueOUsuarioPreenchaONivelECursoDeGraduacao()
         {

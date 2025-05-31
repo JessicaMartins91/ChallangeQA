@@ -7,7 +7,7 @@ using FluentAssertions;
 using Xunit;
 
 
-
+// Tentativa de login informando apenas o campo senha é inválido
 namespace ChallangeQA.Steps
 {
     [Binding]

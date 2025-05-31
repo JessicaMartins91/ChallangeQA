@@ -5,6 +5,7 @@ using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 using FluentAssertions;
 
+//Confirma a seleção do curso de gradução
 namespace MyNamespace
 {
     [Binding]
@@ -19,6 +20,7 @@ namespace MyNamespace
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
         
+        //Seleciona o nível de ensino
       
         [Given(@"que o usuário clique para selecionar curso")]
         public void GivenQueOUsuarioCliqueParaSelecionarCurso()
@@ -36,6 +38,8 @@ namespace MyNamespace
             opcaoGraduacao.Click();
         }
 
+        //Preenche o curso
+
         [When(@"pesquisar o curso Engenharia de Software")]
         public void WhenPesquisarOCursoEngenhariaDeSoftware()
         {
@@ -51,6 +55,8 @@ namespace MyNamespace
                 cursoInput.SendKeys("Engenharia de Software");
                 cursoInput.SendKeys(Keys.Enter);
         }
+
+        //Confirma a selecção de curso
       
         [Then(@"o curso Engenharia de Software deve ser exibido como selecionado")]
         public void ThenOCursoEngenhariaDeSoftwareDeveSerExibidoComoSelecionado()

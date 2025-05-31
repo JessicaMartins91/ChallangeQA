@@ -5,6 +5,7 @@ using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 using FluentAssertions;
 
+// Validar a exibição da flag Possui deficiência
 namespace ChallangeQA.Steps
 {
     [Binding]

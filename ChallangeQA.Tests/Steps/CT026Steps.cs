@@ -7,7 +7,7 @@ using FluentAssertions;
 using Xunit;
 
 
-
+// Acessar com credenciais válidas
 namespace ChallangeQA.Steps
 {
     [Binding]

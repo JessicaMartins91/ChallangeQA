@@ -5,6 +5,7 @@ using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 using FluentAssertions;
 
+// Validar preenchimento do nome social opcional
 namespace ChallangeQA.Steps
 {
     [Binding]

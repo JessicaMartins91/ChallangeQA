@@ -5,6 +5,7 @@ using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 using FluentAssertions;
 
+// Teste para validar a exibição do curso de graduação
 namespace ChallangeQA.Steps
 {
     [Binding]

@@ -5,6 +5,7 @@ using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 using FluentAssertions;
 
+// Preencher o campo telefone com menos caracteres na tela de cadastro
 namespace ChallangeQA.Steps
 {
     [Binding]

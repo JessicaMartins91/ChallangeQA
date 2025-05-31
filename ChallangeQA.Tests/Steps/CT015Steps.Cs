@@ -5,6 +5,7 @@ using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 using FluentAssertions;
 
+//Permitir avanço sem preenchimento do campo Complemento
 namespace ChallangeQA.Steps
 {
     [Binding]

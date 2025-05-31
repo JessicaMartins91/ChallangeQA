@@ -5,6 +5,7 @@ using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 using FluentAssertions;
 
+// Exibir alerta ao preencher o CPF com formato inválido
 namespace ChallangeQA.Steps
 {
     [Binding]

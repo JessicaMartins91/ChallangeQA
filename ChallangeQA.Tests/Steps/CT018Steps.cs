@@ -5,6 +5,7 @@ using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 using FluentAssertions;
 
+//Preencher o campo Celular com menos caracteres
 namespace ChallangeQA.Steps
 {
     [Binding]

@@ -7,7 +7,7 @@ using FluentAssertions;
 using Xunit;
 
 
-
+//Voltar para tela de login após recuperação de senha
 namespace ChallangeQA.Steps
 {
     [Binding]

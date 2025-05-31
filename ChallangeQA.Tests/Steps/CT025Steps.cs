@@ -6,8 +6,7 @@ using TechTalk.SpecFlow;
 using FluentAssertions;
 using Xunit;
 
-
-
+//Direcionar usuário para tela de login
 namespace ChallangeQA.Steps
 {
     [Binding]

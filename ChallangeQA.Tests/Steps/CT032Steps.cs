@@ -7,7 +7,7 @@ using FluentAssertions;
 using Xunit;
 
 
-
+//Redirecionamento para redefinição de senha
 namespace ChallangeQA.Steps
 {
     [Binding]
