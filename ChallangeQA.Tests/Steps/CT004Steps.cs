@@ -52,7 +52,7 @@ namespace ChallangeQA.Steps
                  botaoAvancar.Click();
         }
         
-        //Validar mensagem de alerta ao não informar o campo CPF
+    //Validar mensagem de alerta ao não informar o campo CPF
         [When(@"tenha preenchido os campos obrigatórios do formulário de cadastro exceto CPF")]
         public void WhenTenhaPreenchidoOsCamposObrigatoriosDoFormularioDeCadastroExcetoCPF()
         {

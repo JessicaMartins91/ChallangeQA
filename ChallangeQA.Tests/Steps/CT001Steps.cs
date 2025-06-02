@@ -19,13 +19,15 @@ namespace ChallangeQA.Steps
             driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
-                    // Selecionar o nível de ensiono
+        
+        // Selecionar o nível de ensiono
         [Given(@"que o usuário esteja na tela de seleção de nível de graduação")]
         public void DadoQueOUsuarioEstejaNaTelaDeSelecaoDeNivelDeGraduacao()
         {
             driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription/");
         }
-                // Selecionar a opção graduação
+        
+        // Selecionar a opção graduação
         [When(@"selecionar a opção Graduação e clicar")]
         public void QuandoSelecionarOpcaoGraduacao()
         {
@@ -39,7 +41,8 @@ namespace ChallangeQA.Steps
             );
                 opcaoGraduacao.Click();
         }
-            // Modal selecione se curso deve ser exibida
+        
+        // Modal selecione se curso deve ser exibida
         [Then(@"deve ser exibida a modal Selecione seu curso de graduação")]
         public void EntaoDeveSerExibidaAModalSelecioneSeuCursoDeGraduacao()
         {

@@ -20,7 +20,7 @@ namespace MyNamespace
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
         
-        //Seleciona o nível de ensino
+    //Seleciona o nível de ensino
       
         [Given(@"que o usuário clique para selecionar curso")]
         public void GivenQueOUsuarioCliqueParaSelecionarCurso()
@@ -38,7 +38,7 @@ namespace MyNamespace
             opcaoGraduacao.Click();
         }
 
-        //Preenche o curso
+    //Preenche o curso
 
         [When(@"pesquisar o curso Engenharia de Software")]
         public void WhenPesquisarOCursoEngenhariaDeSoftware()
