@@ -96,3 +96,9 @@ Descrição: O sistema não oferece a opção de visualizar a senha e, caso haja
 Comportamento esperado: Deve haver opção de mostrar a senha digitada e manter os dados preenchidos após erro para facilitar correção.
 Passos para reproduzir: Informar dados de login incorretos.
 Gravidade: Média
+
+Bug 17: Sistema não exibe a opção de voltar ao clicar em financeiro
+Descrição: Ao selecionar a opção financeiro o sitema não exibe a opção retornar.
+Comportamento: O sistema deveria exibir a opção retornar para home, igual a que é exibida ao selecionar 'Minhas inscrições'.
+Passos para reproduzir: Realizar login e clicar em financeiro.
+Gravidade: Média

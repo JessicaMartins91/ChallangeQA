@@ -1,6 +1,6 @@
 ## 🔍 Testes Adicionais Criados
 
-Além dos testes obrigatórios, foram desenvolvidos mais quatro testes focados em cenários específicos da aplicação, para enriquecer a análise de performance:
+Além dos testes obrigatórios, foram desenvolvidos mais quatro testes focados em cenários específicos da aplicação:
 
 | Script                   | Descrição |
 |--------------------------|-----------|

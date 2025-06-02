@@ -1,10 +1,5 @@
 # Estratégia de Massa de Dados – k6-data.md
 
-## Introdução
-
-Para os testes de carga realizados com o K6, foram adotadas diferentes estratégias de criação e uso da massa de dados, de acordo com os requisitos de cada cenário testado. A seguir, estão detalhadas as abordagens utilizadas.
-
-
 ## 1. GET para 100, 500 e 1000 acessos simultâneos
 
 **Estratégia usada:** *Sem necessidade de massa de dados dinâmica.*
