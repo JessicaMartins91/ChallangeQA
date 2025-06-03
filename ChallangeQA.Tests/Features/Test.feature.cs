@@ -116,7 +116,7 @@ testRunner.When("selecionar a opção Graduação e clicar", ((string)(null)), (
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT002: Confirmar seleção do curso de graduação", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 9
+#line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -126,13 +126,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 10
+#line 9
 testRunner.Given("que o usuário clique para selecionar curso", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 11
+#line 10
 testRunner.When("pesquisar o curso Engenharia de Software", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 12
+#line 11
 testRunner.Then("o curso Engenharia de Software deve ser exibido como selecionado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -147,7 +147,7 @@ testRunner.Then("o curso Engenharia de Software deve ser exibido como selecionad
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT003: Avançar após preencher todos os campos obrigatórios do cadastro", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 15
+#line 13
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -157,13 +157,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 16
+#line 14
 testRunner.Given("que o usuário preencha o nível e o curso de graduação", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 17
+#line 15
 testRunner.When("tenha preenchido todos os campos obrigatórios do formulário de cadastro", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 18
+#line 16
 testRunner.Then("ao clicar em \'Avançar\' deve ser direcionado para a tela que informa seu usuário e" +
                         " senha.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -179,7 +179,7 @@ testRunner.Then("ao clicar em \'Avançar\' deve ser direcionado para a tela que 
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT004: Avançar sem preencher todos os campos obrigatórios do cadastro", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 21
+#line 18
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -189,13 +189,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 22
+#line 19
 testRunner.Given("que o usuário tenha preenchido o nível e o curso de graduação", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 23
+#line 20
 testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto CPF", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 24
+#line 21
 testRunner.Then("ao clicar em avançar uma mensagem de alerta deve ser exibida informando que o cam" +
                         "po é obrigatório.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -211,7 +211,7 @@ testRunner.Then("ao clicar em avançar uma mensagem de alerta deve ser exibida i
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT005: Avançar sem preencher apenas o campo nome", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 27
+#line 23
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -221,13 +221,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 28
+#line 24
 testRunner.Given("que o usuário tenha avançado as duas etapas iniciais", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 29
+#line 25
 testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto Nome", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 30
+#line 26
 testRunner.Then("ao clicar em avançar um alerta deve ser exibido informando que o campo é obrigató" +
                         "rio.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -243,7 +243,7 @@ testRunner.Then("ao clicar em avançar um alerta deve ser exibido informando que
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT006: Avançar sem preencher apenas o campo sobrenome", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 33
+#line 28
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -253,14 +253,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 34
+#line 29
 testRunner.Given("que o usuário tenha informado seu nivel de ensino e seu curso", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 35
+#line 30
 testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto Sobrenom" +
                         "e", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 36
+#line 31
 testRunner.Then("ao tentar avançar um alerta deve ser exibido informando que o campo é obrigatório" +
                         ".", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -276,7 +276,7 @@ testRunner.Then("ao tentar avançar um alerta deve ser exibido informando que o 
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT007: Avançar sem preencher apenas o campo email", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 39
+#line 33
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -286,13 +286,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 40
+#line 34
 testRunner.Given("que o usuário tenha informado os dados das etapas anteriores", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 41
+#line 35
 testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 42
+#line 36
 testRunner.Then("ao avançar sem informar o campo email um alerta deve ser exibido campo é obrigató" +
                         "rio.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -308,7 +308,7 @@ testRunner.Then("ao avançar sem informar o campo email um alerta deve ser exibi
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT008: Avançar sem preencher apenas o campo celular", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 45
+#line 38
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -318,13 +318,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 46
+#line 39
 testRunner.Given("que o usuário tenha informado as etapas anteriores", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 47
+#line 40
 testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto celular", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 48
+#line 41
 testRunner.Then("ao avançar sem informar o campo celular um alerta deve ser exibido campo é obriga" +
                         "tório.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -340,7 +340,7 @@ testRunner.Then("ao avançar sem informar o campo celular um alerta deve ser exi
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT009: Avançar sem preencher apenas o campo cep", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 51
+#line 43
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -350,13 +350,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 52
+#line 44
 testRunner.Given("que o usuário que os dados das etapas anteriores tenham sido informadas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 53
+#line 45
 testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto cep", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 54
+#line 46
 testRunner.Then("ao avançar sem informar o campo cep um alerta deve ser exibido campo é obrigatóri" +
                         "o.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -372,7 +372,7 @@ testRunner.Then("ao avançar sem informar o campo cep um alerta deve ser exibido
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT010: Avançar sem preencher apenas o campo endereço", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 57
+#line 48
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -382,14 +382,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 58
+#line 49
 testRunner.Given("que os dados das etapas anteriores tenham sido informados", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 59
+#line 50
 testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto endereço" +
                         "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 60
+#line 51
 testRunner.Then("ao avançar sem informar o campo endereço um alerta deve ser exibido campo é obrig" +
                         "atório.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -405,7 +405,7 @@ testRunner.Then("ao avançar sem informar o campo endereço um alerta deve ser e
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT011: Avançar sem preencher apenas o campo bairro", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 63
+#line 53
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -415,13 +415,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 64
+#line 54
 testRunner.Given("que os dados das etapas anteriores tenham sido preenchidos corretamente", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 65
+#line 55
 testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto bairro", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 66
+#line 56
 testRunner.Then("ao avançar sem informar o bairro um alerta deve ser exibido campo é obrigatório.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -436,7 +436,7 @@ testRunner.Then("ao avançar sem informar o bairro um alerta deve ser exibido ca
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT012: Avançar sem preencher apenas o campo cidade", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 69
+#line 58
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -446,13 +446,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 70
+#line 59
 testRunner.Given("que os dados das etapas anteriores tenham sido corretamente inseridas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 71
+#line 60
 testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto cidade", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 72
+#line 61
 testRunner.Then("ao avançar sem informar o cidade um alerta deve ser exibido campo é obrigatório.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -467,7 +467,7 @@ testRunner.Then("ao avançar sem informar o cidade um alerta deve ser exibido ca
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT013: Avançar sem preencher apenas o campo estado", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 75
+#line 63
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -477,13 +477,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 76
+#line 64
 testRunner.Given("que os usuario informou os dados necessários antes de preencher o formulário", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 77
+#line 65
 testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto estado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 78
+#line 66
 testRunner.Then("ao avançar sem informar o estado um alerta deve ser exibido campo é obrigatório.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -498,7 +498,7 @@ testRunner.Then("ao avançar sem informar o estado um alerta deve ser exibido ca
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT014: Avançar sem preencher apenas o campo pais", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 81
+#line 68
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -508,13 +508,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 82
+#line 69
 testRunner.Given("que os usuario informou todos os dados anteriores", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 83
+#line 70
 testRunner.When("tenha preenchido os campos obrigatórios do formulário de cadastro exceto pais", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 84
+#line 71
 testRunner.Then("ao avançar sem informar o pais um alerta deve ser exibido campo é obrigatório.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -529,7 +529,7 @@ testRunner.Then("ao avançar sem informar o pais um alerta deve ser exibido camp
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT015: Permitir avanço sem preenchimento do campo Complemento", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 87
+#line 73
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -539,14 +539,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 88
+#line 74
 testRunner.Given("que o usuário tenha preenchido as informações anteriores ao formulário de inscriç" +
                         "ão", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 89
+#line 75
 testRunner.When("clicar no botão \"Avançar\" sem preencher o campo Complemento", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 90
+#line 76
 testRunner.Then("o sistema deve permitir que o usuário avance para a tela de login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -561,7 +561,7 @@ testRunner.Then("o sistema deve permitir que o usuário avance para a tela de lo
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT016: Exibir alerta ao preencher o CPF com formato inválido", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 93
+#line 78
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -571,13 +571,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 94
+#line 79
 testRunner.Given("que o usuário esteja na página de formulário de inscrição", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 95
+#line 80
 testRunner.When("preencher o campo CPF com o valor invalido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 96
+#line 81
 testRunner.Then("ao clicar em avançar uma mensagem de alerta deve ser exibida informando que o CPF" +
                         " é inválido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -593,7 +593,7 @@ testRunner.Then("ao clicar em avançar uma mensagem de alerta deve ser exibida i
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT017: Validar formato do email inválido", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 99
+#line 83
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -603,13 +603,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 100
+#line 84
 testRunner.Given("que o usuário informe os dados cadastrais", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 101
+#line 85
 testRunner.When("preencher o campo email com o valor invalido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 102
+#line 86
 testRunner.Then("uma mensagem de alerta deve ser exibida informando Email inválido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -624,7 +624,7 @@ testRunner.Then("uma mensagem de alerta deve ser exibida informando Email invál
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT018: Preencher o campo Celular com menos caracteres", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 105
+#line 88
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -634,13 +634,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 106
+#line 89
 testRunner.Given("que o usuário foi direcionado a tela de cadastro", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 107
+#line 90
 testRunner.When("o usuário preenche o campo Celular com menos de 10 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 108
+#line 91
 testRunner.Then("uma mensagem de alerta deve ser exibida informando sobre a quantidade de caracter" +
                         "es", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -656,7 +656,7 @@ testRunner.Then("uma mensagem de alerta deve ser exibida informando sobre a quan
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT019: Preencher o campo Celular com mais caracteres", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 111
+#line 93
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -666,14 +666,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 112
- testRunner.Given("que o usuário foi direcionado a tela de cadastro e os dados foram informados", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 94
+testRunner.Given("que o usuário foi direcionado a tela de cadastro e os dados foram informados", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 113
- testRunner.When("o usuário preenche o campo Celular com mais de 15 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 95
+testRunner.When("o usuário preenche o campo Celular com mais de 15 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 114
- testRunner.Then("uma mensagem de alerta deve ser exibida informando sobre a quantidade maxima perm" +
+#line 96
+testRunner.Then("uma mensagem de alerta deve ser exibida informando sobre a quantidade maxima perm" +
                         "itida", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -688,8 +688,8 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT020: Preencher o campo telefone com menos caracteres na tela de cadastro", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 117
- this.ScenarioInitialize(scenarioInfo);
+#line 98
+this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
             {
@@ -698,14 +698,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 118
- testRunner.Given("que o usuário está na tela de cadastro informando os dados necessários", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 99
+testRunner.Given("que o usuário está na tela de cadastro informando os dados necessários", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 119
- testRunner.When("o usuário preenche o campo Telefone com menos de 10 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 100
+testRunner.When("o usuário preenche o campo Telefone com menos de 10 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 120
- testRunner.Then("deve ser exibida a mensagem no campo telefone Devem ser informados no mínimo 10 c" +
+#line 101
+testRunner.Then("deve ser exibida a mensagem no campo telefone Devem ser informados no mínimo 10 c" +
                         "aracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -720,8 +720,8 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT021: Preencher o campo telefone com mais caracteres na tela de cadastro", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 123
- this.ScenarioInitialize(scenarioInfo);
+#line 103
+this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
             {
@@ -730,14 +730,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 124
- testRunner.Given("que o usuário está na tela de cadastro preenchendo as informações pessoais", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 104
+testRunner.Given("que o usuário está na tela de cadastro preenchendo as informações pessoais", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 125
- testRunner.When("o usuário preenche o campo Telefone com mais de 15 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 105
+testRunner.When("o usuário preenche o campo Telefone com mais de 15 caracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 126
- testRunner.Then("deve ser exibida a mensagem no campo telefone Devem ser informados no máximo 15 c" +
+#line 106
+testRunner.Then("deve ser exibida a mensagem no campo telefone Devem ser informados no máximo 15 c" +
                         "aracteres", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -752,8 +752,8 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT022: Validar a exibição da flag Possui deficiência", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 129
- this.ScenarioInitialize(scenarioInfo);
+#line 108
+this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
             {
@@ -762,14 +762,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 130
- testRunner.Given("que tenha preenchido as informações do formulario corretamente", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 109
+testRunner.Given("que tenha preenchido as informações do formulario corretamente", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 131
- testRunner.When("o usuário marcar a opção Possui alguma deficiência?", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 110
+testRunner.When("o usuário marcar a opção Possui alguma deficiência?", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 132
- testRunner.Then("um campo para preenchimento relacionado à deficiência deve ser exibido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 111
+testRunner.Then("um campo para preenchimento relacionado à deficiência deve ser exibido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -783,7 +783,7 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT023: Validar preenchimento do nome social opcional", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 135
+#line 113
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -793,13 +793,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 136
+#line 114
 testRunner.Given("que o usuário informe os dados necessários antes de preencher o formulario", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 137
+#line 115
 testRunner.When("preencher o campo Nome social com Mariana", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 138
+#line 116
 testRunner.Then("o valor Mariana deve ser mantido e aceito como nome social", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -814,7 +814,7 @@ testRunner.Then("o valor Mariana deve ser mantido e aceito como nome social", ((
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT024: Retornar para tela selecione seu nível de ensino", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 141
+#line 118
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -824,13 +824,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 142
+#line 119
 testRunner.Given("que o usuário esteja na tela selecione seu curso de Graduação", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 143
+#line 120
 testRunner.When("clicar no botão voltar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 144
+#line 121
 testRunner.Then("o sistema deve retornar para a tela de Selecione seu nível de ensino", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -845,7 +845,7 @@ testRunner.Then("o sistema deve retornar para a tela de Selecione seu nível de 
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT025: Direcionar usuário para tela de login", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 147
+#line 123
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -855,13 +855,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 148
+#line 124
 testRunner.Given("que o usuário tenha informado corretamente todos os dados cadastrais", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 149
+#line 125
 testRunner.When("o usuário avançar para a próxima etapa", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 150
+#line 126
 testRunner.Then("ele deve ver a tela inicial com a mensagem de boas-vindas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -876,7 +876,7 @@ testRunner.Then("ele deve ver a tela inicial com a mensagem de boas-vindas", ((s
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT026: Acessar com credenciais válidas", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 153
+#line 128
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -886,13 +886,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 154
+#line 129
 testRunner.Given("que o usuário tenha realizado o cadastro", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 155
+#line 130
 testRunner.When("clicar no botão acessar área do candidato", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 156
+#line 131
 testRunner.Then("ao informar login e senha corretamente deve ser direcionado para area do candidat" +
                         "o", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -908,7 +908,7 @@ testRunner.Then("ao informar login e senha corretamente deve ser direcionado par
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT027: Acessar com credenciais invalidas", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 159
+#line 133
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -918,13 +918,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 160
+#line 134
 testRunner.Given("que o usuário avançou todas as etapas de cadastrais", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 161
+#line 135
 testRunner.When("avançar para tela area do candidato", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 162
+#line 136
 testRunner.Then("ao informar login e senha incorretos deve exibir alerta informado credenciais inv" +
                         "alidas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -940,7 +940,7 @@ testRunner.Then("ao informar login e senha incorretos deve exibir alerta informa
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT028: Tentativa de login informando apenas o campo senha inválido", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 166
+#line 138
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -950,13 +950,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 167
+#line 139
 testRunner.Given("que depois de preencher os dados para cadastro", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 168
+#line 140
 testRunner.When("preencher apenas o campo usuário com o valor inválido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 169
+#line 141
 testRunner.Then("o sistema deve alertar que o usuário é invalido não permitindo login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -971,7 +971,7 @@ testRunner.Then("o sistema deve alertar que o usuário é invalido não permitin
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT029: Tentativa de login informando apenas o campo senha é inválido", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 172
+#line 143
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -981,13 +981,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 173
+#line 144
 testRunner.Given("que depois de preencher o formulário pessoal e avançar para o login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 174
+#line 145
 testRunner.When("preencher apenas o campo senha com o valor inválido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 175
+#line 146
 testRunner.Then("o sistema deve alertar que a senha é invalida não permitindo login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -1002,7 +1002,7 @@ testRunner.Then("o sistema deve alertar que a senha é invalida não permitindo 
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT030: Redirecionamento para recuperação de usuário", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 178
+#line 148
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -1012,13 +1012,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 179
+#line 149
 testRunner.Given("que após o cadastro o usuário esteja na tela de login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 180
+#line 150
 testRunner.When("o link Recuperar usuário for clicado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 181
+#line 151
 testRunner.Then("uma mensagem deve ser exibida com o texto Usuário recuperado. Verifique seu e-mai" +
                         "l", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -1034,7 +1034,7 @@ testRunner.Then("uma mensagem deve ser exibida com o texto Usuário recuperado. 
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT031: Voltar para tela de login após recuperação de usuário", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 184
+#line 153
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -1044,13 +1044,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 185
+#line 154
 testRunner.Given("que o usuário realizou o cadastro e foi direcionado para tela de login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 186
+#line 155
 testRunner.When("clicar no link recuperar usuário um alerta será exibido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 187
+#line 156
 testRunner.Then("ao clicar em voltar para home deve ser direcionado novamente para tela de login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -1065,7 +1065,7 @@ testRunner.Then("ao clicar em voltar para home deve ser direcionado novamente pa
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT032: Redirecionamento para redefinição de senha", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 190
+#line 158
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -1075,13 +1075,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 191
+#line 159
 testRunner.Given("que após o cadastro o usuário esteja na tela de login e senha", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 192
+#line 160
 testRunner.When("o Redefinir Senha for clicado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 193
+#line 161
 testRunner.Then("uma mensagem deve ser exibida informando que a senha foi redefinida", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -1096,7 +1096,7 @@ testRunner.Then("uma mensagem deve ser exibida informando que a senha foi redefi
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CT033: Voltar para tela de login após recuperação de senha", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 196
+#line 163
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -1106,13 +1106,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 197
+#line 164
 testRunner.Given("que após informar os dados pessoais o usuário esteja na tela de login e senha", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 198
+#line 165
 testRunner.When("clicar no link de recuperar senha", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 199
+#line 166
 testRunner.Then("ao clicar em voltar para home sera direcionado para tela de login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
