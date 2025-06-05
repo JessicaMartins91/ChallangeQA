@@ -20,7 +20,7 @@ namespace ChallangeQA.Steps
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
 
-    [Given(@"que tenha preenchido as informações do formulario corretamente")]
+        [Given(@"que tenha preenchido as informações do formulario corretamente")]
         public void GivenQueTenhaPreenchidoAsInformacoesDoFormularioCorretamente()
         {
             Console.WriteLine("CT022 - Início do preenchimento do formulário");
@@ -54,7 +54,7 @@ namespace ChallangeQA.Steps
                 botaoAvancar.Click();
         }
 
-    [Then(@"um campo para preenchimento relacionado à deficiência deve ser exibido")]
+        [Then(@"um campo para preenchimento relacionado à deficiência deve ser exibido")]
         public void ThenUmCampoParaPreenchimentoRelacionadoADeficienciaDeveSerExibido()
         {
             var cpfInput = wait.Until(d =>
@@ -114,7 +114,7 @@ namespace ChallangeQA.Steps
                  paisInput.SendKeys("Brasil");
         }
 
-    [When(@"o usuário marcar a opção Possui alguma deficiência\?")]
+        [When(@"o usuário marcar a opção Possui alguma deficiência\?")]
         public void WhenOUsuarioMarcarAOpcaoPossuiAlgumaDeficiencia()
         {   
         
@@ -134,6 +134,13 @@ namespace ChallangeQA.Steps
                 d.FindElement(By.CssSelector("[data-testid='next-button']")));
             botaoAvancar.Click();
 
+        }
+        
+        [AfterScenario]
+        public void TearDown()
+        {
+            driver.Quit();
+            driver.Dispose();
         }
     }
 }

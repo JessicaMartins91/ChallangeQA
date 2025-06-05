@@ -22,8 +22,8 @@ namespace ChallangeQA.Steps
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
         }
     
-    [Given(@"que depois de preencher o formulário pessoal e avançar para o login")]
-    public void GivenQueDepoisDePreencherOFormularioPessoalEAvancarParaOLogin()
+        [Given(@"que depois de preencher o formulário pessoal e avançar para o login")]
+        public void GivenQueDepoisDePreencherOFormularioPessoalEAvancarParaOLogin()
         {
             driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription/");
 
@@ -110,8 +110,8 @@ namespace ChallangeQA.Steps
                 acessarAreaCandidato.Click();
         }
     
-    [When(@"preencher apenas o campo senha com o valor inválido")]
-    public void WhenPreencherApenasOCampoSenhaComOValorInvalido()
+        [When(@"preencher apenas o campo senha com o valor inválido")]
+        public void WhenPreencherApenasOCampoSenhaComOValorInvalido()
         {
             var informarLogin = wait.Until(d => 
                 d.FindElement(By.CssSelector("[data-testid='username-input']")));
@@ -122,8 +122,8 @@ namespace ChallangeQA.Steps
                 informarSenha.SendKeys("subscripti@n");
         }
     
-    [Then(@"o sistema deve alertar que a senha é invalida não permitindo login")]
-    public void ThenOSistemaDeveAlertarQueASenhaEInvalidaNaoPermitindoLogin()
+        [Then(@"o sistema deve alertar que a senha é invalida não permitindo login")]
+        public void ThenOSistemaDeveAlertarQueASenhaEInvalidaNaoPermitindoLogin()
         {
             var botaoLogin = wait.Until(d =>
                 d.FindElement(By.CssSelector("[data-testid='login-button']")));
@@ -133,6 +133,13 @@ namespace ChallangeQA.Steps
                 d.FindElement(By.XPath("//p[@role='alert' and contains(text(), 'Senha inválida')]"))
             );
                 alertaSenhaInvalida.Text.Should().Contain("Senha inválida");
+        }
+
+        [AfterScenario]
+        public void TearDown()
+        {
+            driver.Quit();
+            driver.Dispose();
         }
     }
 }

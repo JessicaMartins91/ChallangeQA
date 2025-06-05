@@ -22,8 +22,8 @@ namespace ChallangeQA.Steps
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
         }
     
-    [Given(@"que o usuário avançou todas as etapas de cadastrais")]
-    public void GivenQueOUsuarioAvancouTodasAsEtapasCadastrais()
+        [Given(@"que o usuário avançou todas as etapas de cadastrais")]
+        public void GivenQueOUsuarioAvancouTodasAsEtapasCadastrais()
         {
             driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription/");
 
@@ -106,16 +106,16 @@ namespace ChallangeQA.Steps
             botaoAvancarParaLogin.Click();
         }
     
-    [When(@"avançar para tela area do candidato")]
-    public void WhenAvancarParaTelaAreaDoCandidato()
+        [When(@"avançar para tela area do candidato")]
+        public void WhenAvancarParaTelaAreaDoCandidato()
         {
             var acessarAreaCandidato = wait.Until(d => 
                 d.FindElement(By.CssSelector("[data-testid='next-button']")));
                 acessarAreaCandidato.Click();
         }
 
-    [Then(@"ao informar login e senha incorretos deve exibir alerta informado credenciais invalidas")]
-    public void ThenAoInformarLoginESenhaIncorretosDeveExibirAlertaInformandoCredenciaisInvalidas()
+        [Then(@"ao informar login e senha incorretos deve exibir alerta informado credenciais invalidas")]
+        public void ThenAoInformarLoginESenhaIncorretosDeveExibirAlertaInformandoCredenciaisInvalidas()
         {
             var informarLogin = wait.Until(d => 
                     d.FindElement(By.CssSelector("[data-testid='username-input']")));
@@ -138,6 +138,13 @@ namespace ChallangeQA.Steps
                      d.FindElement(By.XPath("//p[@role='alert' and contains(text(), 'Senha inválida')]"))
             );
                     alertaSenhaInvalida.Text.Should().Contain("Senha inválida");
+        }
+        
+        [AfterScenario]
+        public void TearDown()
+        {
+            driver.Quit();
+            driver.Dispose();
         }
     }
 }

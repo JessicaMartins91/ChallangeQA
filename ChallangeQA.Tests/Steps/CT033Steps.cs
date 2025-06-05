@@ -21,8 +21,9 @@ namespace ChallangeQA.Steps
             driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
         }
-    [Given(@"que após informar os dados pessoais o usuário esteja na tela de login e senha")]
-    public void GivenQueAposInformarOsDadosPessoaisOUsuarioEstejanaTelaDeLoginESenha()
+        
+        [Given(@"que após informar os dados pessoais o usuário esteja na tela de login e senha")]
+        public void GivenQueAposInformarOsDadosPessoaisOUsuarioEstejanaTelaDeLoginESenha()
         {
             driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription/");
 
@@ -109,8 +110,8 @@ namespace ChallangeQA.Steps
                 acessarAreaCandidato.Click();
         }
 
-    [When(@"clicar no link de recuperar senha")]
-    public void WhenClicarNoLinkRecuperarSenha()
+        [When(@"clicar no link de recuperar senha")]
+        public void WhenClicarNoLinkRecuperarSenha()
         {
             var recuperarUsuarioLink = wait.Until(d =>
                 d.FindElement(By.XPath("//a[contains(text(), 'Redefinir senha')]"))
@@ -118,8 +119,8 @@ namespace ChallangeQA.Steps
                 recuperarUsuarioLink.Click();
         }
 
-    [Then(@"ao clicar em voltar para home sera direcionado para tela de login")]
-    public void ThenAoClicarEmVoltarParaHomeSeraDirecionadoParaTelaDeLogin()
+        [Then(@"ao clicar em voltar para home sera direcionado para tela de login")]
+        public void ThenAoClicarEmVoltarParaHomeSeraDirecionadoParaTelaDeLogin()
         {
             var voltarHome = wait.Until(d => 
                 d.FindElement(By.CssSelector("[data-testid='back-button']")));
@@ -129,6 +130,13 @@ namespace ChallangeQA.Steps
                 d.FindElement(By.CssSelector(".text-sm.text-muted-foreground"))
             );
             mensagemLogin.Text.Should().Contain("Faça login para acessar a área do candidato");
+        }
+    
+        [AfterScenario]
+        public void TearDown()
+        {
+            driver.Quit();
+            driver.Dispose();
         }
 
     }

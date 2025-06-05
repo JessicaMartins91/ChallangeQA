@@ -22,8 +22,8 @@ namespace ChallangeQA.Steps
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
 
-    [Given(@"que o usuário esteja na tela selecione seu curso de Graduação")]
-    public void GivenQueOUsuarioEstejaNaTelaSelecioneSeuCursoDeGraduacao()
+        [Given(@"que o usuário esteja na tela selecione seu curso de Graduação")]
+        public void GivenQueOUsuarioEstejaNaTelaSelecioneSeuCursoDeGraduacao()
         {
             driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription/");
 
@@ -38,8 +38,8 @@ namespace ChallangeQA.Steps
                  opcaoGraduacao.Click();
         }
 
-    [When(@"clicar no botão voltar")]
-    public void WhenClicarNoBotaoVoltar()
+         [When(@"clicar no botão voltar")]
+        public void WhenClicarNoBotaoVoltar()
         {
             var botaoVoltar = wait.Until(d =>
                  d.FindElement(By.CssSelector("[data-testid='back-button']"))
@@ -47,13 +47,20 @@ namespace ChallangeQA.Steps
                  botaoVoltar.Click();
         } 
 
-    [Then(@"o sistema deve retornar para a tela de Selecione seu nível de ensino")]
-    public void ThenOSistemaDeveRetornarParaATelaDeSelecioneSeuNivelDeEnsino()
+        [Then(@"o sistema deve retornar para a tela de Selecione seu nível de ensino")]
+         public void ThenOSistemaDeveRetornarParaATelaDeSelecioneSeuNivelDeEnsino()
         {   
             Assert.True(
             driver.PageSource.Contains("Escolha o seu nível de ensino e embarque nessa aventura!"), 
             "O texto esperado foi encontrado na tela."
-    );
+            );
+        }
+
+        [AfterScenario]
+        public void TearDown()
+        {
+            driver.Quit();
+            driver.Dispose();
         }
     }
 }

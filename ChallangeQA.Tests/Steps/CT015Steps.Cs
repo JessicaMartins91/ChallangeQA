@@ -20,8 +20,8 @@ namespace ChallangeQA.Steps
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
 
-    [Given(@"que o usuário tenha preenchido as informações anteriores ao formulário de inscrição")]
-    public void GivenQueOUsuarioTenhaPreenchidoAsInformacoesAnterioresAoFormularioDeInscricao()
+        [Given(@"que o usuário tenha preenchido as informações anteriores ao formulário de inscrição")]
+        public void GivenQueOUsuarioTenhaPreenchidoAsInformacoesAnterioresAoFormularioDeInscricao()
         {
             driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription/");
 
@@ -52,8 +52,8 @@ namespace ChallangeQA.Steps
                  botaoAvancar.Click();
         }
 
-    [When(@"clicar no botão ""Avançar"" sem preencher o campo Complemento")]
-    public void WhenClicarNoBotaoAvancarSemPreencherOCampoComplemento()
+        [When(@"clicar no botão ""Avançar"" sem preencher o campo Complemento")]
+        public void WhenClicarNoBotaoAvancarSemPreencherOCampoComplemento()
         {
             var cpfInput = wait.Until(d => 
             d.FindElement(By.CssSelector("[data-testid='cpf-input']")));

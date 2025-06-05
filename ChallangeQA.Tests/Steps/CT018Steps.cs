@@ -20,8 +20,8 @@ namespace ChallangeQA.Steps
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
 
-     [Given(@"que o usuário foi direcionado a tela de cadastro")]
-     public void GivenQueOUsuarioFoiDirecionadoATelaDeCadastro()
+        [Given(@"que o usuário foi direcionado a tela de cadastro")]
+        public void GivenQueOUsuarioFoiDirecionadoATelaDeCadastro()
         {
             driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription/");
 
@@ -52,8 +52,8 @@ namespace ChallangeQA.Steps
                  botaoAvancar.Click();
         }
 
-    [When(@"o usuário preenche o campo Celular com menos de 10 caracteres")]
-    public void WhenOUsuarioPreencheOCampoCelularComMenosDe10Caracteres()
+         [When(@"o usuário preenche o campo Celular com menos de 10 caracteres")]
+        public void WhenOUsuarioPreencheOCampoCelularComMenosDe10Caracteres()
         {
             var cpfInput = wait.Until(d => 
             d.FindElement(By.CssSelector("[data-testid='cpf-input']")));
@@ -108,8 +108,8 @@ namespace ChallangeQA.Steps
             paisInput.SendKeys("Brasil");
         }
 
-    [Then(@"uma mensagem de alerta deve ser exibida informando sobre a quantidade de caracteres")]
-    public void ThenUmaMensagemDeAlertaDeveSerExibidaInformandoSobreAQuantidadeDeCaracteres()
+        [Then(@"uma mensagem de alerta deve ser exibida informando sobre a quantidade de caracteres")]
+        public void ThenUmaMensagemDeAlertaDeveSerExibidaInformandoSobreAQuantidadeDeCaracteres()
         {
             var botaoAvancar = wait.Until(d => d.FindElement(By.CssSelector("[data-testid='next-button']")));
             botaoAvancar.Click();
@@ -119,10 +119,9 @@ namespace ChallangeQA.Steps
             );
             alertaCelular.Text.Should().Contain("Devem ser informados no mínimo 10 caracteres");
         }
-    
 
-    [AfterScenario]
-    public void TearDown()
+        [AfterScenario]
+        public void TearDown()
         {
             driver.Quit();
             driver.Dispose();

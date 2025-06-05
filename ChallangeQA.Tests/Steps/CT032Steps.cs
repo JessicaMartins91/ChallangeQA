@@ -110,8 +110,8 @@ namespace ChallangeQA.Steps
                 acessarAreaCandidato.Click();
         }
     
-    [When(@"o Redefinir Senha for clicado")]
-    public void WhenORedefinirSenhaForClicado()
+        [When(@"o Redefinir Senha for clicado")]
+        public void WhenORedefinirSenhaForClicado()
         {
             var recuperarSenha = wait.Until(d =>
                 d.FindElement(By.XPath("//a[contains(text(), 'Redefinir senha')]"))
@@ -119,13 +119,20 @@ namespace ChallangeQA.Steps
                 recuperarSenha.Click();
         }
 
-    [Then(@"uma mensagem deve ser exibida informando que a senha foi redefinida")]
-    public void ThenUmaMensagemDeveSerExibidaInformandoQueASenhaFoiRedefinida()
+        [Then(@"uma mensagem deve ser exibida informando que a senha foi redefinida")]
+        public void ThenUmaMensagemDeveSerExibidaInformandoQueASenhaFoiRedefinida()
         {
             var alertaSenha= wait.Until(d =>
                 d.FindElement(By.CssSelector("h3.font-semibold.tracking-tight.text-2xl"))
             );
                 alertaSenha.Text.Should().Contain("Senha redefinida");
+        }
+        
+        [AfterScenario]
+        public void TearDown()
+        {
+            driver.Quit();
+            driver.Dispose();
         }
     }
 }

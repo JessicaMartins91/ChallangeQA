@@ -109,8 +109,8 @@ namespace ChallangeQA.Steps
             paisInput.SendKeys("Brasil");
         }
 
-    [Then(@"deve ser exibida a mensagem no campo telefone Devem ser informados no mínimo 10 caracteres")]
-    public void ThenDeveSerExibidaAMensagemNoCampoTelefoneDevemSerInformadosNoMinimo10Caracteres()
+        [Then(@"deve ser exibida a mensagem no campo telefone Devem ser informados no mínimo 10 caracteres")]
+        public void ThenDeveSerExibidaAMensagemNoCampoTelefoneDevemSerInformadosNoMinimo10Caracteres()
         {
             var botaoAvancar = wait.Until(d =>
                 d.FindElement(By.CssSelector("[data-testid='next-button']")));

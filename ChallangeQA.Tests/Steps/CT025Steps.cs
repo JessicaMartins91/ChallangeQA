@@ -21,8 +21,8 @@ namespace ChallangeQA.Steps
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
         }
 
-    [Given(@"que o usuário tenha informado corretamente todos os dados cadastrais")]
-    public void GivenQueOUsuarioTenhaInformadoCorretamenteTodosOsDadosCadastrais()
+        [Given(@"que o usuário tenha informado corretamente todos os dados cadastrais")]
+        public void GivenQueOUsuarioTenhaInformadoCorretamenteTodosOsDadosCadastrais()
         {
              driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription/");
 
@@ -102,24 +102,30 @@ namespace ChallangeQA.Steps
             
         }
     
-    [When(@"o usuário avançar para a próxima etapa")]
-    public void WhenOUsuarioAvancarParaAProximaEtapa()
+        [When(@"o usuário avançar para a próxima etapa")]
+        public void WhenOUsuarioAvancarParaAProximaEtapa()
         {
             var botaoAvancar = wait.Until(d =>
                 d.FindElement(By.CssSelector("[data-testid='next-button']")));
             botaoAvancar.Click();
         }
     
-    [Then(@"ele deve ver a tela inicial com a mensagem de boas-vindas")]
-    public void ThenEleDeveVerATelaIncialComAMensagemDeBoasVindas()
-        {   
-            
-        var elemento = driver.FindElement(By.CssSelector("h3.font-semibold.tracking-tight.text-2xl"));
-        // Pega o texto do elemento e remove espaços extras
-        string texto = elemento.Text.Trim();
-        // Verifica se o texto contém a frase esperada
-         Assert.True(texto.Contains("Sua jornada começa aqui!"), "O texto esperado foi encontrado no <h3>.");
-
+        [Then(@"ele deve ver a tela inicial com a mensagem de boas-vindas")]
+        public void ThenEleDeveVerATelaIncialComAMensagemDeBoasVindas()
+        {               
+        
+            var elemento = driver.FindElement(By.CssSelector("h3.font-semibold.tracking-tight.text-2xl"));
+            // Pega o texto do elemento e remove espaços extras
+             string texto = elemento.Text.Trim();
+            // Verifica se o texto contém a frase esperada
+            Assert.True(texto.Contains("Sua jornada começa aqui!"), "O texto esperado foi encontrado no <h3>.");
+        }
+    
+        [AfterScenario]
+        public void TearDown()
+        {
+            driver.Quit();
+            driver.Dispose();
         }
 
     }

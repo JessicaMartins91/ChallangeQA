@@ -68,8 +68,8 @@ namespace MyNamespace
             
             var botaoAvancar = wait.Until(d =>
                d.FindElement(By.CssSelector("button.inline-flex.items-center.justify-center.bg-primary"))
-    );
-    botaoAvancar.Click();
+            );
+                botaoAvancar.Click();
 
         }
 

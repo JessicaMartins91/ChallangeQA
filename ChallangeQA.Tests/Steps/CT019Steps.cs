@@ -109,8 +109,8 @@ namespace ChallangeQA.Steps
             paisInput.SendKeys("Brasil");
         }
 
-    [Then(@"uma mensagem de alerta deve ser exibida informando sobre a quantidade maxima permitida")]
-    public void ThenUmaMensagemDeAlertaDeveSerExibidaInformandoSobreAQuantidadeMaximaPermitida()
+        [Then(@"uma mensagem de alerta deve ser exibida informando sobre a quantidade maxima permitida")]
+         public void ThenUmaMensagemDeAlertaDeveSerExibidaInformandoSobreAQuantidadeMaximaPermitida()
         {
             var botaoAvancar = wait.Until(d =>
                 d.FindElement(By.CssSelector("[data-testid='next-button']")));

@@ -21,8 +21,9 @@ namespace ChallangeQA.Steps
             driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
         }
-    [Given(@"que após o cadastro o usuário esteja na tela de login")]
-    public void GivenQueApósOCadastroOUsuarioEstejaNaTelaDeLogin()
+        
+        [Given(@"que após o cadastro o usuário esteja na tela de login")]
+        public void GivenQueApósOCadastroOUsuarioEstejaNaTelaDeLogin()
         {
             driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription/");
 
@@ -109,8 +110,8 @@ namespace ChallangeQA.Steps
                 acessarAreaCandidato.Click();
         }
 
-    [When(@"o link Recuperar usuário for clicado")]
-    public void WhenOLinkRecuperarUsuarioForClicado()
+        [When(@"o link Recuperar usuário for clicado")]
+        public void WhenOLinkRecuperarUsuarioForClicado()
         {
             var recuperarUsuarioLink = wait.Until(d =>
                 d.FindElement(By.XPath("//a[contains(text(), 'Recuperar usuário')]"))
@@ -118,14 +119,21 @@ namespace ChallangeQA.Steps
                 recuperarUsuarioLink.Click();
         }
     
-    [Then(@"uma mensagem deve ser exibida com o texto Usuário recuperado. Verifique seu e-mail")]
-    public void ThenUmaMensagemDeveSerExibidaComOTextoUsuarioRecuperadoVerifiqueSeuEmail()
+        [Then(@"uma mensagem deve ser exibida com o texto Usuário recuperado. Verifique seu e-mail")]
+        public void ThenUmaMensagemDeveSerExibidaComOTextoUsuarioRecuperadoVerifiqueSeuEmail()
         {
             var alertaUsuario = wait.Until(d =>
                 d.FindElement(By.CssSelector("h3.font-semibold.tracking-tight.text-2xl"))
             );
 
                 alertaUsuario.Text.Should().Contain("Usuário recuperado");
+        }
+
+        [AfterScenario]
+        public void TearDown()
+        {
+            driver.Quit();
+            driver.Dispose();
         }
     
     }

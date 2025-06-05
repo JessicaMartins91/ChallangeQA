@@ -114,7 +114,7 @@ namespace ChallangeQA.Steps
                     acessarAreaCandidato.Click();
             }
         
-         [Then(@"ao informar login e senha corretamente deve ser direcionado para area do candidato")]
+        [Then(@"ao informar login e senha corretamente deve ser direcionado para area do candidato")]
          public void ThenAoInformarLoginESenhaCorretamenteDeveSerDirecionadoParaAreaDoCandidato()
             {
                 var informarLogin = wait.Until(d => 
@@ -135,5 +135,12 @@ namespace ChallangeQA.Steps
                     string texto = elemento.Text.Trim();
                     Assert.True(texto.Contains("Bem-vindo, Candidato!"), $"Texto real encontrado: {texto}");
             }
+        
+        [AfterScenario]
+        public void TearDown()
+        {
+            driver.Quit();
+            driver.Dispose();
+        }
     }
 }

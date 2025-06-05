@@ -20,8 +20,8 @@ namespace ChallangeQA.Steps
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
 
-     [Given(@"que o usuário esteja na página de formulário de inscrição")]
-     public void GivenQueOUsuarioEstejaNaPaginaDeFormularioDeInscricao()
+        [Given(@"que o usuário esteja na página de formulário de inscrição")]
+         public void GivenQueOUsuarioEstejaNaPaginaDeFormularioDeInscricao()
         {
             driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription/");
 
@@ -52,8 +52,8 @@ namespace ChallangeQA.Steps
                  botaoAvancar.Click();
         }
 
-    [When(@"preencher o campo CPF com o valor invalido")]
-    public void WhenPreencherOCampoCPFComOValorInvalido()
+        [When(@"preencher o campo CPF com o valor invalido")]
+         public void WhenPreencherOCampoCPFComOValorInvalido()
         {
             var cpfInput = wait.Until(d => 
             d.FindElement(By.CssSelector("[data-testid='cpf-input']")));
@@ -108,7 +108,7 @@ namespace ChallangeQA.Steps
             paisInput.SendKeys("Brasil");
         }
 
-      [Then(@"ao clicar em avançar uma mensagem de alerta deve ser exibida informando que o CPF é inválido")]
+        [Then(@"ao clicar em avançar uma mensagem de alerta deve ser exibida informando que o CPF é inválido")]
       public void ThenAoClicarEmAvancarUmaMensagemDeAlertaDeveSerExibidaInformandoQueOCPFEInvalido()
 
         {

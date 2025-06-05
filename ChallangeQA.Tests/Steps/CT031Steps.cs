@@ -21,8 +21,9 @@ namespace ChallangeQA.Steps
             driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
         }
-    [Given(@"que o usuário realizou o cadastro e foi direcionado para tela de login")]
-    public void GivenQueOUsuarioRealizouOCadastroEFoiDirecionadoParaTelaDeLogin()
+        
+        [Given(@"que o usuário realizou o cadastro e foi direcionado para tela de login")]
+        public void GivenQueOUsuarioRealizouOCadastroEFoiDirecionadoParaTelaDeLogin()
         {
             driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription/");
 
@@ -109,8 +110,8 @@ namespace ChallangeQA.Steps
                 acessarAreaCandidato.Click();
         }
 
-    [When(@"clicar no link recuperar usuário um alerta será exibido")]
-    public void WhenClicarNoLinkRecuperarUsuarioUmAlertaSeraExibido()
+        [When(@"clicar no link recuperar usuário um alerta será exibido")]
+        public void WhenClicarNoLinkRecuperarUsuarioUmAlertaSeraExibido()
         {
             var recuperarUsuarioLink = wait.Until(d =>
                 d.FindElement(By.XPath("//a[contains(text(), 'Recuperar usuário')]"))
@@ -118,8 +119,8 @@ namespace ChallangeQA.Steps
                 recuperarUsuarioLink.Click();
         }
 
-    [Then(@"ao clicar em voltar para home deve ser direcionado novamente para tela de login")]
-    public void ThenAoClicarEmVoltarParaHomeDeveSerDirecionadoNovamenteParaTelaDeLogin()
+        [Then(@"ao clicar em voltar para home deve ser direcionado novamente para tela de login")]
+        public void ThenAoClicarEmVoltarParaHomeDeveSerDirecionadoNovamenteParaTelaDeLogin()
         {
             var voltarHome = wait.Until(d => 
                 d.FindElement(By.CssSelector("[data-testid='back-button']")));
@@ -129,6 +130,13 @@ namespace ChallangeQA.Steps
                 d.FindElement(By.CssSelector(".text-sm.text-muted-foreground"))
             );
             mensagemLogin.Text.Should().Contain("Faça login para acessar a área do candidato");
+        }
+
+        [AfterScenario]
+        public void TearDown()
+        {
+            driver.Quit();
+            driver.Dispose();
         }
 
     }

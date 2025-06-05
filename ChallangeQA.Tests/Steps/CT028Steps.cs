@@ -22,8 +22,8 @@ namespace ChallangeQA.Steps
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
         }
     
-    [Given(@"que depois de preencher os dados para cadastro")]
-    public void GivenQueDepoisDePreencherOsDadosParaCadastro()
+        [Given(@"que depois de preencher os dados para cadastro")]
+        public void GivenQueDepoisDePreencherOsDadosParaCadastro()
         {
             driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription/");
 
@@ -110,8 +110,8 @@ namespace ChallangeQA.Steps
                 acessarAreaCandidato.Click();
         }
     
-    [When(@"preencher apenas o campo usuário com o valor inválido")]
-    public void WhenPreencherApenasOCampoUsuarioComOValorInvalido()
+        [When(@"preencher apenas o campo usuário com o valor inválido")]
+        public void WhenPreencherApenasOCampoUsuarioComOValorInvalido()
         {
             var informarLogin = wait.Until(d => 
                 d.FindElement(By.CssSelector("[data-testid='username-input']")));
@@ -122,8 +122,8 @@ namespace ChallangeQA.Steps
                 informarSenha.SendKeys("subscription");
         }
     
-    [Then(@"o sistema deve alertar que o usuário é invalido não permitindo login")]
-    public void ThenOSistemaDeveAlertarQueOUsuarioEInvalidoNaoPermitindoLogin()
+        [Then(@"o sistema deve alertar que o usuário é invalido não permitindo login")]
+        public void ThenOSistemaDeveAlertarQueOUsuarioEInvalidoNaoPermitindoLogin()
         {
             var botaoLogin = wait.Until(d =>
                 d.FindElement(By.CssSelector("[data-testid='login-button']")));
@@ -133,6 +133,13 @@ namespace ChallangeQA.Steps
                 d.FindElement(By.XPath("//p[@role='alert' and contains(text(), 'Usuário inválido')]"))
             );
                 alertaUsuarioInvalido.Text.Should().Contain("Usuário inválido");
+        }
+
+        [AfterScenario]
+        public void TearDown()
+        {
+            driver.Quit();
+            driver.Dispose();
         }
     }
 }

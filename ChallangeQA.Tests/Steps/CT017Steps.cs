@@ -20,8 +20,8 @@ namespace ChallangeQA.Steps
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
 
-     [Given(@"que o usuário informe os dados cadastrais")]
-     public void GivenQueOUsuarioInformeOsDadosCadastrais()
+        [Given(@"que o usuário informe os dados cadastrais")]
+         public void GivenQueOUsuarioInformeOsDadosCadastrais()
         {
             driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription/");
 
@@ -52,8 +52,8 @@ namespace ChallangeQA.Steps
                  botaoAvancar.Click();
         }
 
-    [When(@"preencher o campo email com o valor invalido")]
-    public void WhenPreencherOCampoEmailComOValorInvalido()
+        [When(@"preencher o campo email com o valor invalido")]
+        public void WhenPreencherOCampoEmailComOValorInvalido()
         {
             var cpfInput = wait.Until(d => 
             d.FindElement(By.CssSelector("[data-testid='cpf-input']")));
@@ -108,8 +108,8 @@ namespace ChallangeQA.Steps
             paisInput.SendKeys("Brasil");
         }
 
-      [Then(@"uma mensagem de alerta deve ser exibida informando Email inválido")]
-      public void ThenUmaMensagemDeAlertaDeveSerExibidaInformandoEmailInvalido()
+        [Then(@"uma mensagem de alerta deve ser exibida informando Email inválido")]
+        public void ThenUmaMensagemDeAlertaDeveSerExibidaInformandoEmailInvalido()
 
         {
             var botaoAvancar = wait.Until(d => d.FindElement(By.CssSelector("[data-testid='next-button']")));

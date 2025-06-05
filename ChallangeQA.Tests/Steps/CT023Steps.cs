@@ -53,8 +53,8 @@ namespace ChallangeQA.Steps
                 botaoAvancar.Click();
         }
 
-    [When(@"preencher o campo Nome social com Mariana")]
-    public void WhenPreencherOCampoNomeSocialComMariana()
+        [When(@"preencher o campo Nome social com Mariana")]
+        public void WhenPreencherOCampoNomeSocialComMariana()
         {
             var cpfInput = wait.Until(d =>
                 d.FindElement(By.CssSelector("[data-testid='cpf-input']")));
@@ -109,8 +109,8 @@ namespace ChallangeQA.Steps
                  paisInput.SendKeys("Brasil");
         }
 
-    [Then(@"o valor Mariana deve ser mantido e aceito como nome social")]
-    public void ThenOValorMarianaDeveSerMantidoEAceitoComoNomeSocial()
+        [Then(@"o valor Mariana deve ser mantido e aceito como nome social")]
+        public void ThenOValorMarianaDeveSerMantidoEAceitoComoNomeSocial()
         {   
 
              var nomeSocialInput = wait.Until(d =>
@@ -123,6 +123,13 @@ namespace ChallangeQA.Steps
                 d.FindElement(By.CssSelector("[data-testid='next-button']")));
             botaoAvancar.Click();
 
+        }
+
+        [AfterScenario]
+        public void TearDown()
+        {
+            driver.Quit();
+            driver.Dispose();
         }
     }
 }
